@@ -46,6 +46,7 @@
       "ecmaVersion": 2018,
       "sourceType": "module"
     },
+    "root": true,
     "rules": {
       "import/no-extraneous-dependencies": [
         "error",
@@ -55,6 +56,9 @@
       ]
     }
   },
+  "eslintIgnore": [
+    "dist/"
+  ],
   "prettier": {
     "arrowParens": "always",
     "singleQuote": true,
