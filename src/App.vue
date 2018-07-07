@@ -11,12 +11,9 @@ export default {
 </script>
 
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css?family=Roboto');
 html,
 body {
-  height: 100%;
-}
-body {
   font-family: 'Roboto', sans-serif;
+  height: 100%;
 }
 </style>

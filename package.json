@@ -25,7 +25,8 @@
     "vue": "^2.5.16",
     "vue-eslint-parser": "^2.0.3",
     "vue-hot-reload-api": "^2.3.0",
-    "vue-template-compiler": "^2.5.16"
+    "vue-template-compiler": "^2.5.16",
+    "vuetify": "^1.0.19"
   },
   "babel": {
     "presets": [
