@@ -1,12 +1,12 @@
-<template lang="html">
-  <div id="app">
-    <h1>Hello Parcel 📦 🚀</h1>
-  </div>
+<template>
+  <v-app><curriculum/></v-app>
 </template>
 
 <script>
+import Curriculum from './Curriculum.vue';
+
 export default {
-  name: 'App',
+  components: { Curriculum },
 };
 </script>
 
