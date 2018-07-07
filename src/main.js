@@ -1,3 +1,4 @@
+import 'babel-polyfill'; // IE 11 & Safari 9 support
 import 'vuetify/dist/vuetify.min.css'; // Ensure you are using css-loader
 
 import Vue from 'vue';
