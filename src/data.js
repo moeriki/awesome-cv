@@ -1,4 +1,20 @@
 export default {
+  experience: {
+    skills: {
+      'lang-en': {
+        score: 10,
+        title: 'English 🇬🇧󠁧󠁿',
+      },
+      'lang-nl': {
+        score: 10,
+        title: 'Dutch 🇳🇱',
+      },
+      'lang-fr': {
+        score: 6,
+        title: 'French 🇫🇷',
+      },
+    },
+  },
   profile: {
     contacts: [
       {
