@@ -1,6 +1,9 @@
 <template>
   <v-container>
-    <v-layout>
+    <v-layout wrap>
+      <v-flex xs12>
+        <intro />
+      </v-flex>
       <v-flex xs12>
         <profile />
       </v-flex>
@@ -9,9 +12,10 @@
 </template>
 
 <script>
+import Intro from './Intro.vue';
 import Profile from './Profile.vue';
 
 export default {
-  components: { Profile },
+  components: { Intro, Profile },
 };
 </script>

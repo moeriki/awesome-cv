@@ -1,16 +1,5 @@
 <template>
   <v-layout wrap>
-    <v-flex
-      xs12
-      text-xs-center>
-      <avatar />
-    </v-flex>
-    <v-flex
-      xs12
-      text-xs-center>
-      <h1 class="display-2 name">{{ name }}</h1>
-      <h2 class="title">{{ title }}</h2>
-    </v-flex>
     <v-flex xs12>
       <v-card>
         <v-list two-line>
@@ -47,9 +36,3 @@ export default {
   }),
 };
 </script>
-
-<style lang="scss" scoped>
-.title {
-  font-weight: 300;
-}
-</style>
