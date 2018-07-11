@@ -1,11 +1,16 @@
 <template>
   <v-container>
-    <v-layout wrap>
+    <v-layout
+      class="main"
+      wrap>
       <v-flex xs12>
         <intro />
       </v-flex>
       <v-flex xs12>
         <profile />
+      </v-flex>
+      <v-flex xs12>
+        <education />
       </v-flex>
       <v-flex xs12>
         <skills />
@@ -15,11 +20,18 @@
 </template>
 
 <script>
+import Education from './Education.vue';
 import Intro from './Intro.vue';
 import Profile from './Profile.vue';
 import Skills from './Skills.vue';
 
 export default {
-  components: { Intro, Profile, Skills },
+  components: { Education, Intro, Profile, Skills },
 };
 </script>
+
+<style scoped>
+.main > div {
+  margin-top: 16px;
+}
+</style>

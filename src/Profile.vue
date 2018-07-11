@@ -10,7 +10,9 @@
             <v-list-tile-action>
               <v-icon
                 color="primary"
-                large>{{ contact.icon }}</v-icon>
+                large>
+                {{ contact.icon }}
+              </v-icon>
             </v-list-tile-action>
             <v-list-tile-content>
               <v-list-tile-title>{{ contact.value }}</v-list-tile-title>

@@ -1,7 +1,5 @@
 <template>
-  <v-layout
-    class="intro"
-    wrap>
+  <v-layout wrap>
     <v-flex
       xs12
       text-xs-center>
@@ -32,9 +30,6 @@ export default {
 </script>
 
 <style scoped>
-.intro {
-  margin-bottom: 16px;
-}
 .title {
   font-weight: 300;
 }

@@ -1,7 +1,5 @@
 <template>
-  <v-layout
-    class="skills"
-    wrap>
+  <v-layout>
     <v-flex xs12>
       <v-card>
         <v-list two-line>
@@ -48,9 +46,6 @@ export default {
 </script>
 
 <style scoped>
-.skills {
-  margin-top: 16px;
-}
 .stars {
   align-items: center;
   flex-direction: row;

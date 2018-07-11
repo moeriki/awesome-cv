@@ -1,4 +1,11 @@
 export default {
+  education: {
+    dateFrom: '2004',
+    dateUntil: '2008',
+    icon: 'fal fa-graduation-cap',
+    institution: 'KHLeuven',
+    title: 'Toegepaste Informatica',
+  },
   experience: {
     skills: {
       'lang-nl': {
