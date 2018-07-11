@@ -9,6 +9,13 @@ export default {
         value: 'dieter@moeriki.com',
       },
       {
+        _id: 'github',
+        icon: 'fab fa-github',
+        label: 'GitHub',
+        link: 'https://github.com/moeriki',
+        value: '@moeriki',
+      },
+      {
         _id: 'twitter',
         icon: 'fab fa-twitter',
         label: 'Twitter',
