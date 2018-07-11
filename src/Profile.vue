@@ -6,7 +6,7 @@
           <v-list-tile
             v-for="contact in contacts"
             :href="contact.link"
-            :key="contact.key">
+            :key="contact._id">
             <v-list-tile-action>
               <v-icon
                 color="primary"

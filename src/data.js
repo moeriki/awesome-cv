@@ -2,29 +2,29 @@ export default {
   profile: {
     contacts: [
       {
+        _id: 'email',
         icon: 'fal fa-at',
-        key: 'email',
         label: 'E-mail',
         link: 'mailto:dieter@moeriki.com',
         value: 'dieter@moeriki.com',
       },
       {
+        _id: 'twitter',
         icon: 'fab fa-twitter',
-        key: 'twitter',
         label: 'Twitter',
         link: 'https://twitter.com/dieterluypaert',
         value: '@dieterluypaert',
       },
       // {
+      //   _id: 'telephone',
       //   icon: 'fal fa-phone',
-      //   key: 'telephone',
       //   label: 'Telephone',
       //   link: 'tel:+32 494 35 83 17',
       //   value: '+32 494 35 83 17',
       // },
       {
+        _id: 'home',
         icon: 'fal fa-home',
-        key: 'home',
         label: 'Address',
         link: 'https://www.openstreetmap.org/#map=15/51.0273/4.4801',
         value: 'Mechelen',
