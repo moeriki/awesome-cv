@@ -17,6 +17,7 @@
                 fas fa-star-half
               </v-icon>
               <v-icon
+                v-if="skill.stars"
                 v-for="index in skill.stars"
                 :key="index">
                 fas fa-star
@@ -37,8 +38,8 @@ export default {
   data: () => ({
     skills: asArray(data.experience.skills).map(({ _id, score, title }) => ({
       _id,
-      halfAStar: score % 2 === 1,
-      stars: Math.floor(score / 2),
+      halfAStar: score && score % 2 === 1,
+      stars: score && Math.floor(score / 2),
       title,
     })),
   }),
