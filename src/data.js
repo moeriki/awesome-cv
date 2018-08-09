@@ -8,17 +8,457 @@ export default {
   },
   experience: {
     skills: {
-      'lang-nl': {
-        score: 10,
-        title: 'Dutch 🇳🇱',
+      angular: {
+        parent: 'skill.javaScript',
+        title: 'Angular',
       },
-      'lang-en': {
+      angularJs: {
+        parent: 'skill.angular',
+        score: 6,
+        title: 'AngularJS 1.5',
+        description: 'Component based AngularJS.',
+      },
+      ant: {
+        legacy: true,
+        parent: 'category.tools',
+        title: 'Ant',
+      },
+      async: {
+        legacy: true,
+        parent: 'category.stack',
+        title: 'Async',
+      },
+      atom: {
+        parent: 'category.tools',
+        title: 'Atom',
+      },
+      aws: {
+        parent: 'category.stack',
+        title: 'Amazon Web Services',
+      },
+      backbone: {
+        legacy: true,
+        parent: 'category.stack',
+        score: 9,
+        title: 'Backbone',
+      },
+      bamboo: {
+        parent: 'category.tools',
+        score: 8,
+        title: 'Bamboo',
+      },
+      bitbucket: {
+        parent: 'skill.git',
+        title: 'BitBucket',
+      },
+      bootstrap: {
+        parent: 'category.stack',
+        score: 8,
+        title: 'Bootstrap',
+      },
+      bunyan: {
+        parent: 'skill.javaScript',
+        score: 9,
+        title: 'Bunyan',
+      },
+      chai: {
+        parent: 'category.stack',
+        score: 9,
+        title: 'Chai',
+      },
+      clearCase: {
+        legacy: true,
+        parent: 'category.tools',
+        title: 'Rational ClearCase',
+      },
+      coffeeScript: {
+        legacy: true,
+        parent: 'skill.javaScript',
+        title: 'CoffeeScript',
+      },
+      confluence: {
+        parent: 'category.tools',
+        title: 'Confluence',
+      },
+      css: {
+        parent: 'category.lanugage',
+        title: 'CSS',
+      },
+      drupal: {
+        parent: 'category.stack',
+        title: 'Drupal',
+      },
+      drupal7: {
+        parent: 'skill.drupal',
+        score: 3,
+        title: 'Drupal 7',
+      },
+      dynamodb: {
+        parent: 'skill.aws',
+        score: 7,
+        title: 'DynamoDB',
+      },
+      eclipse: {
+        legacy: true,
+        parent: 'category.tools',
+        title: 'Eclipse',
+      },
+      elasticSearch: {
+        parent: 'category.stack',
+        score: 6,
+        title: 'ElasticSearch',
+      },
+      en: {
+        parent: 'category.language',
         score: 10,
         title: 'English 🇬🇧󠁧󠁿',
       },
-      'lang-fr': {
+      es2015: {
+        parent: 'skill.javaScript',
+        score: 10,
+        title: 'ES2015 - ES2018',
+      },
+      es5: {
+        parent: 'skill.javaScript',
+        score: 10,
+        title: 'ES5',
+      },
+      express: {
+        parent: 'category.stack',
+        score: 8,
+        title: 'Express',
+      },
+      fr: {
+        parent: 'category.language',
         score: 6,
         title: 'French 🇫🇷',
+      },
+      gigya: {
+        parent: 'category.stack',
+        score: 6,
+        title: 'Gigya',
+      },
+      git: {
+        parent: 'category.tools',
+        score: 8,
+        title: 'Git',
+      },
+      github: {
+        parent: 'skill.git',
+        title: 'GitHub',
+      },
+      gitlab: {
+        parent: 'skill.git',
+        title: 'GitLab',
+      },
+      grunt: {
+        parent: 'category.tools',
+        score: 6,
+        title: 'Grunt',
+      },
+      gulp: {
+        parent: 'category.tools',
+        score: 6,
+        title: 'Gulp',
+      },
+      handlebars: {
+        legacy: true,
+        parent: 'category.stack',
+        score: 7,
+        title: 'Handlebars',
+      },
+      html: {
+        legacy: true,
+        parent: 'category.stack',
+        title: 'HTML',
+      },
+      html4: {
+        parent: 'skill.html',
+        score: 9,
+        title: 'HTML 4',
+      },
+      html5: {
+        parent: 'skill.html',
+        score: 7,
+        title: 'HTML 5',
+      },
+      jQuery: {
+        legacy: true,
+        parent: 'skill.javaScript',
+        score: 8,
+        title: 'jQuery',
+      },
+      jQueryMobile: {
+        legacy: true,
+        parent: 'skill.jquery',
+        title: 'jQuery Mobile',
+      },
+      jQueryUi: {
+        legacy: true,
+        parent: 'skill.jquery',
+        title: 'jQuery UI',
+      },
+      java: {
+        legacy: true,
+        parent: 'category.stack',
+        title: 'Java',
+      },
+      java6: {
+        legacy: true,
+        parent: 'skill.java',
+        score: 5,
+        title: 'Java 6',
+      },
+      java8: {
+        parent: 'skill.java',
+        score: 6,
+        title: 'Java 8',
+      },
+      javaScript: {
+        parent: 'category.language',
+        score: 10,
+        title: 'JavaScript',
+      },
+      jBoss: {
+        parent: 'skill.java',
+        title: 'JBoss',
+      },
+      jest: {
+        parent: 'skill.javaScript',
+        score: 10,
+        title: 'Jest',
+      },
+      jira: {
+        parent: 'category.tools',
+        score: 9,
+        title: 'JIRA',
+      },
+      json: {
+        parent: 'category.stack',
+        score: 10,
+        title: 'JSON',
+      },
+      junit: {
+        parent: 'skill.java',
+        score: 3,
+        title: 'JUnit',
+      },
+      kibana: {
+        parent: 'category.stack',
+        score: 6,
+        title: 'Kibana',
+      },
+      kineticJs: {
+        legacy: true,
+        parent: 'skill.javaScript',
+        title: 'KineticJS',
+      },
+      koa: {
+        parent: 'skill.javaScript',
+        score: 10,
+        title: 'Koa',
+      },
+      lambda: {
+        parent: 'skill.aws',
+        score: 9,
+        title: 'Lambda',
+      },
+      loDash: {
+        parent: 'skill.javaScript',
+        score: 9,
+        title: 'Lo-Dash',
+      },
+      log4J: {
+        parent: 'skill.java',
+        score: 8,
+        title: 'Log4J',
+      },
+      logStash: {
+        parent: 'category.stack',
+        score: 4,
+        title: 'LogStash',
+      },
+      maven: {
+        parent: 'skill.java',
+        score: 7,
+        title: 'Maven',
+      },
+      mocha: {
+        parent: 'skill.javaScript',
+        score: 9,
+        title: 'Mocha',
+      },
+      mongoDb: {
+        parent: 'category.stack',
+        score: 9,
+        title: 'MongoDB',
+      },
+      mooTools: {
+        legacy: true,
+        parent: 'skill.javaScript',
+        title: 'MooTools',
+      },
+      mySql: {
+        parent: 'category.stack',
+        score: 6,
+        title: 'MySQL',
+      },
+      nl: {
+        parent: 'category.language',
+        score: 10,
+        title: 'Dutch 🇳🇱',
+      },
+      nodeJs: {
+        parent: 'skill.javaScript',
+        score: 9,
+        title: 'NodeJS',
+      },
+      npm: {
+        parent: 'skill.nodeJs',
+        score: 9,
+        title: 'npm',
+      },
+      phoneGap: {
+        parent: 'category.stack',
+        score: 2,
+        title: 'PhoneGap',
+      },
+      php: {
+        parent: 'category.language',
+        score: 4,
+        title: 'PHP',
+      },
+      phpMyAdmin: {
+        parent: 'skill.php',
+        score: 7,
+        title: 'PhpMyAdmin',
+      },
+      python: {
+        parent: 'category.language',
+        score: 2,
+        title: 'Python',
+      },
+      quicksand: {
+        legacy: true,
+        parent: 'skill.javaScript',
+        title: 'Quicksand',
+      },
+      redis: {
+        parent: 'category.stack',
+        score: 6,
+        title: 'Redis',
+      },
+      requireJs: {
+        legacy: true,
+        parent: 'skill.javaScript',
+        score: 10,
+        title: 'RequireJS',
+      },
+      rest: {
+        parent: 'category.stack',
+        score: 9,
+        title: 'REST',
+      },
+      ruby: {
+        parent: 'category.language',
+        score: 1,
+        title: 'Ruby',
+      },
+      rubyOnRails: {
+        legacy: true,
+        parent: 'skill.ruby',
+        title: 'Ruby on Rails 4',
+      },
+      s3: {
+        parent: 'skill.aws',
+        score: 8,
+        title: 'S3',
+      },
+      scss: {
+        parent: 'skill.css',
+        score: 8,
+        title: 'SCSS',
+      },
+      selligent: {
+        parent: 'category.stack',
+        score: 4,
+        title: 'Selligent',
+      },
+      ses: {
+        parent: 'skill.aws',
+        score: 8,
+        title: 'SES',
+      },
+      sns: {
+        parent: 'skill.aws',
+        score: 9,
+        title: 'SNS',
+      },
+      spring: {
+        parent: 'skill.java',
+        score: 2,
+        title: 'Spring 3',
+      },
+      sqs: {
+        parent: 'skill.aws',
+        score: 9,
+        title: 'SQS',
+      },
+      stash: {
+        legacy: true,
+        parent: 'skill.git',
+        title: 'Stash',
+      },
+      struts: {
+        legacy: true,
+        parent: 'skill.java',
+        title: 'Struts 1',
+      },
+      sublimeText: {
+        parent: 'category.tools',
+        title: 'Sublime Text',
+      },
+      svn: {
+        legacy: true,
+        parent: 'category.tools',
+        title: 'SVN',
+      },
+      teamSite: {
+        legacy: true,
+        parent: 'skill.java',
+        title: 'TeamSite / LiveSite',
+      },
+      tinyMce: {
+        legacy: true,
+        parent: 'skill.javaScript',
+        title: 'TinyMCE',
+      },
+      tomcat: {
+        parent: 'skill.java',
+        title: 'Tomcat',
+      },
+      underscore: {
+        legacy: true,
+        parent: 'skill.javaScript',
+        title: 'Underscore',
+      },
+      vsCode: {
+        parent: 'category.tools',
+        title: 'Visual Studio Code',
+      },
+      winston: {
+        parent: 'skill.javaScript',
+        score: 9,
+        title: 'Winston',
+      },
+      xml: {
+        parent: 'category.stack',
+        title: 'XML',
+      },
+      xslt: {
+        parent: 'skill.xml',
+        score: 5,
+        title: 'XSLT / XPath',
       },
     },
   },

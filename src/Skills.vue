@@ -34,14 +34,18 @@
 import data from './data';
 import { asArray } from './utils';
 
+const isNoLegacy = ({ legacy }) => legacy !== true;
+
 export default {
   data: () => ({
-    skills: asArray(data.experience.skills).map(({ _id, score, title }) => ({
-      _id,
-      halfAStar: score && score % 2 === 1,
-      stars: score && Math.floor(score / 2),
-      title,
-    })),
+    skills: asArray(data.experience.skills)
+      .filter(isNoLegacy)
+      .map(({ _id, score, title }) => ({
+        _id,
+        halfAStar: score && score % 2 === 1,
+        stars: score && Math.floor(score / 2),
+        title,
+      })),
   }),
 };
 </script>
@@ -50,6 +54,7 @@ export default {
 .stars {
   align-items: center;
   flex-direction: row;
+  justify-content: flex-end;
 }
 .halfAStar {
   transform: scaleX(-1);
