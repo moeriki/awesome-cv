@@ -34,6 +34,6 @@ export default {
 
 <style scoped>
 .employer + .employer {
-  margin-top: 1em;
+  margin-top: 16px;
 }
 </style>
