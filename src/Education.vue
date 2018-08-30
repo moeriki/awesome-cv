@@ -11,7 +11,7 @@
           <h5 class="headline">
             {{ education.title }}
             <span class="subheading grey--text">
-              {{ education.institution }}, {{ education.dateFrom }} &ndash; {{ education.dateUntil }}
+              {{ education.location }}, {{ education.dateFrom }} &ndash; {{ education.dateUntil }}
             </span>
           </h5>
         </v-card-title>

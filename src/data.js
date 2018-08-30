@@ -3,7 +3,7 @@ export default {
     dateFrom: '2004',
     dateUntil: '2008',
     icon: 'fal fa-graduation-cap',
-    institution: 'KHLeuven',
+    location: 'KHLeuven',
     title: 'Toegepaste Informatica',
   },
   employers: {
@@ -12,6 +12,7 @@ export default {
       dateUntil: '2009',
       description:
         'In the latter half of my adolescent years I spend most of my summer guarding and animating children of various ages at a local playground.',
+      location: 'Kampenhout',
       title: 'Playground',
     },
     scouting: {
@@ -19,6 +20,7 @@ export default {
       dateUntil: '2012',
       description:
         'For seven years I’ve given life and soul while actively participating in the scouting group of Berg.',
+      location: 'Berg',
       title: 'Scouting',
     },
     lbi: {

@@ -10,7 +10,12 @@
             <h5 class="headline">
               {{ employer.title }}
               <span class="subheading grey--text">
-                {{ employer.dateFrom }} &ndash; {{ employer.dateUntil }}
+                <span
+                  class="location"
+                  v-if="employer.location">
+                  {{ employer.location }}
+                </span>
+                <span class="timespan">{{ employer.dateFrom }} &ndash; {{ employer.dateUntil }}</span>
               </span>
             </h5>
           </v-card-title>
@@ -35,5 +40,8 @@ export default {
 <style scoped>
 .employer + .employer {
   margin-top: 16px;
+}
+.location + .timespan::before {
+  content: ', ';
 }
 </style>
