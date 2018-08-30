@@ -37,16 +37,18 @@ import { asArray } from './utils';
 const isNoLegacy = ({ legacy }) => legacy !== true;
 
 export default {
-  data: () => ({
-    skills: asArray(data.experience.skills)
-      .filter(isNoLegacy)
-      .map(({ _id, score, title }) => ({
-        _id,
-        halfAStar: score && score % 2 === 1,
-        stars: score && Math.floor(score / 2),
-        title,
-      })),
-  }),
+  data() {
+    return {
+      skills: asArray(data.experience.skills)
+        .filter(isNoLegacy)
+        .map(({ _id, score, title }) => ({
+          _id,
+          halfAStar: score && score % 2 === 1,
+          stars: score && Math.floor(score / 2),
+          title,
+        })),
+    };
+  },
 };
 </script>
 

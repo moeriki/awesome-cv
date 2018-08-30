@@ -12,8 +12,10 @@
 import data from './data';
 
 export default {
-  data: () => ({
-    caption: `Picture of ${data.profile.name}`,
-  }),
+  data() {
+    return {
+      caption: `Picture of ${data.profile.name}`,
+    };
+  },
 };
 </script>

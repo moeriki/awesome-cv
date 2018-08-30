@@ -21,11 +21,13 @@ import data from './data';
 
 export default {
   components: { Avatar },
-  data: () => ({
-    contacts: data.profile.contacts,
-    name: data.profile.name,
-    title: data.profile.title,
-  }),
+  data() {
+    return {
+      contacts: data.profile.contacts,
+      name: data.profile.name,
+      title: data.profile.title,
+    };
+  },
 };
 </script>
 

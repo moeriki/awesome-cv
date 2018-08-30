@@ -31,9 +31,11 @@ import data from './data';
 import { asArray } from './utils';
 
 export default {
-  data: () => ({
-    employers: asArray(data.experience.employers),
-  }),
+  data() {
+    return {
+      employers: asArray(data.experience.employers),
+    };
+  },
 };
 </script>
 

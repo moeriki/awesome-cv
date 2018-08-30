@@ -24,8 +24,10 @@
 import data from './data';
 
 export default {
-  data: () => ({
-    education: data.experience.education,
-  }),
+  data() {
+    return {
+      education: data.experience.education,
+    };
+  },
 };
 </script>
