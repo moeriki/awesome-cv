@@ -8,8 +8,12 @@
             large>
             {{ education.icon }}
           </v-icon>
-          <div class="headline">{{ education.title }}</div>
-          <span class="grey--text">{{ education.institution }}, {{ education.dateFrom }} &ndash; {{ education.dateUntil }}</span>
+          <h5 class="headline">
+            {{ education.title }}
+            <span class="subheading grey--text">
+              {{ education.institution }}, {{ education.dateFrom }} &ndash; {{ education.dateUntil }}
+            </span>
+          </h5>
         </v-card-title>
       </v-card>
     </v-flex>

@@ -8,8 +8,8 @@
     <v-flex
       xs12
       text-xs-center>
-      <h1 class="display-2">{{ name }}</h1>
-      <div class="display-1 title">{{ title }}</div>
+      <h2 class="display-3">{{ name }}</h2>
+      <div class="title">{{ title }}</div>
     </v-flex>
     <v-spacer />
   </v-layout>
