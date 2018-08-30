@@ -25,7 +25,7 @@ import data from './data';
 
 export default {
   data: () => ({
-    education: data.education,
+    education: data.experience.education,
   }),
 };
 </script>

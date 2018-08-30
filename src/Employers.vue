@@ -32,7 +32,7 @@ import { asArray } from './utils';
 
 export default {
   data: () => ({
-    employers: asArray(data.employers),
+    employers: asArray(data.experience.employers),
   }),
 };
 </script>
