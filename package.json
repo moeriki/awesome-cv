@@ -33,11 +33,17 @@
     "vuetify": "^1.2.1"
   },
   "babel": {
+    "plugins": [
+      "transform-object-rest-spread"
+    ],
     "presets": [
       "env",
       "vue"
     ]
   },
+  "browserslist": [
+    "> 1%"
+  ],
   "eslintConfig": {
     "extends": [
       "airbnb-base",
@@ -51,6 +57,14 @@
     },
     "root": true,
     "rules": {
+      "no-underscore-dangle": [
+        "error",
+        {
+          "allow": [
+            "_id"
+          ]
+        }
+      ],
       "import/no-extraneous-dependencies": [
         "error",
         {
@@ -66,5 +80,8 @@
     "arrowParens": "always",
     "singleQuote": true,
     "trailingComma": "all"
+  },
+  "dependencies": {
+    "babel-plugin-transform-object-rest-spread": "^6.26.0"
   }
 }

@@ -1,49 +1,68 @@
 <template>
   <v-layout>
     <v-flex xs12>
-      <v-card
-        class="employer"
+      <div
         v-for="employer in employers"
         :key="employer._id">
-        <v-card-title>
-          <v-card-title primary-title>
-            <h5 class="headline">
-              {{ employer.title }}
-              <span class="subheading grey--text">
-                <span
-                  class="location"
-                  v-if="employer.location">
-                  {{ employer.location }}
+        <v-card class="employer">
+          <v-card-title>
+            <v-card-title primary-title>
+              <h5 class="headline">
+                {{ employer.title }}
+                <span class="subheading grey--text">
+                  <span
+                    v-if="employer.location"
+                    class="location">
+                    {{ employer.location }}
+                  </span>
+                  <span class="timespan">
+                    {{ employer.dateFrom }} &ndash; {{ employer.dateUntil }}
+                  </span>
                 </span>
-                <span class="timespan">{{ employer.dateFrom }} &ndash; {{ employer.dateUntil }}</span>
-              </span>
-            </h5>
+              </h5>
+            </v-card-title>
+            <v-card-text>{{ employer.description }}</v-card-text>
           </v-card-title>
-          <v-card-text>{{ employer.description }}</v-card-text>
-        </v-card-title>
-      </v-card>
+        </v-card>
+        <projects
+          v-if="employer.projects.length !== 0"
+          :projects="employer.projects"
+          class="projects" />
+      </div>
     </v-flex>
   </v-layout>
 </template>
 
 <script>
 import data from './data';
-import { asArray } from './utils';
+import { asArray, matchesProperty, orderBy } from './utils';
+import Projects from './Projects.vue';
 
 export default {
+  components: { Projects },
   data() {
     return {
-      employers: asArray(data.experience.employers),
+      employers: asArray(data.experience.employers)
+        .sort(orderBy('dateFrom'))
+        .map((employer) => ({
+          ...employer,
+          projects: asArray(data.experience.projects)
+            .filter(matchesProperty('employerId', employer._id))
+            .sort(orderBy('dateFrom')),
+        })),
     };
   },
 };
 </script>
 
 <style scoped>
-.employer + .employer {
+.employer {
   margin-top: 16px;
 }
 .location + .timespan::before {
   content: ', ';
+}
+.projects {
+  margin-top: 8px;
 }
 </style>

@@ -1,5 +1,13 @@
 export default {
   experience: {
+    clients: {
+      belgacom: { title: 'Belgacom' },
+      medialaan: { title: 'MEDIALAAN' },
+      scoutingBerg: { title: 'Scouting Berg' },
+      sigedis: { title: 'Sigedis' },
+      tme: { title: 'Toyota Motors Europe' },
+      vanerum: { title: 'Vanerum' },
+    },
     education: {
       dateFrom: '2004',
       dateUntil: '2008',
@@ -49,6 +57,69 @@ export default {
         dateUntil: '…',
         description: `As an independent I'd doing both the same and more of everything I love.`,
         title: 'Independant',
+      },
+    },
+    projects: {
+      db2p: {
+        clientId: 'sigedis',
+        dateFrom: '2011',
+        dateUntil: '2013',
+        description:
+          'In order to have better control over fiscal and social data concerning the second pension pillar in Belgium a database has been under development since two years. This will contain personal data about the additional pension funds for employers, self-employed and officials.',
+        employerId: 'cernum',
+        role:
+          'Development of multiple frontends in Spring MVC and Struts, additionally a backend module for data validation.',
+        title: 'DB2P',
+      },
+      leadMgmt: {
+        clientId: 'tme',
+        dateFrom: '2015',
+        dateUntil: '2016',
+        description:
+          'For a more managed follow-up of leads we are developing a group of AWS micro-services that will automate the capturing, processing and maintenance of lead data.',
+        employerId: 'foursevens',
+        role: 'Lead Developer',
+        title: 'Lead Management',
+      },
+      learnhub: {
+        clientId: 'vanerum',
+        dateFrom: '2013',
+        dateUntil: '2015',
+        description:
+          'We are creating an interactive whiteboard web application to complement the hardware Vanerum sells to educational institutions. This involves a complex front-end architecture to ensure minimum maintenance and maximum flexibility towards additional future developments. The purpose of this beautiful and ambitious project, created in alliance with XAOP, is to empower teachers in all fields of education.',
+        employerId: 'foursevens',
+        role: 'Architect, Lead Developer',
+        title: 'i3LEARNHUB',
+      },
+      medialaan: {
+        clientId: 'medialaan',
+        dateFrom: '2016',
+        dateUntil: '2018',
+        description:
+          'In an ever-changing digital landscape the medialaan New Media teams crafts and maintains services for serving video content live and on demand to consumers. Paired with a varying slew of microservices the challenge never ends.',
+        employerId: 'foursevens',
+        role: 'Lead Developer',
+        title: 'Medialaan',
+      },
+      scoutingBerg: {
+        clientId: 'scoutingBerg',
+        dateFrom: '2011',
+        dateUntil: '2013',
+        description:
+          'Scouting Berg is a local youth movement in need of an active web presence, which improves contact with both the children and their parents.',
+        employerId: 'independant',
+        role: 'Solo Developer, Maintainer',
+        title: 'Scouting Berg',
+      },
+      ucms: {
+        clientId: 'belgacom',
+        dateFrom: '2009',
+        dateUntil: '2011',
+        description:
+          'uCMS is a unified CMS for the Belgacom Group based on the LiveSite CMS. For this ambitious project we would implement an abstract unified system we could use as base to develop the future public sites of Belgacom.',
+        employerId: 'lbi',
+        role: 'Developer',
+        title: 'uCMS',
       },
     },
     skills: {
