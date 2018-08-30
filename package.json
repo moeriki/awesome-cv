@@ -7,9 +7,10 @@
     "node": ">=8"
   },
   "scripts": {
+    "clean": "rm -rf .cache dist/",
     "lint": "eslint --ext .js,.vue src/",
     "test": "npm run lint",
-    "start": "rm -rf dist/ && parcel",
+    "start": "parcel",
     "build": "parcel build"
   },
   "devDependencies": {
