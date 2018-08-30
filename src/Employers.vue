@@ -32,7 +32,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .employer + .employer {
   margin-top: 1em;
 }
