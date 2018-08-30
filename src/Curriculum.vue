@@ -13,6 +13,9 @@
         <education />
       </v-flex>
       <v-flex xs12>
+        <employers />
+      </v-flex>
+      <v-flex xs12>
         <skills />
       </v-flex>
     </v-layout>
@@ -21,12 +24,13 @@
 
 <script>
 import Education from './Education.vue';
+import Employers from './Employers.vue';
 import Intro from './Intro.vue';
 import Profile from './Profile.vue';
 import Skills from './Skills.vue';
 
 export default {
-  components: { Education, Intro, Profile, Skills },
+  components: { Education, Employers, Intro, Profile, Skills },
 };
 </script>
 

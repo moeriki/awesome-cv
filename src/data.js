@@ -6,6 +6,48 @@ export default {
     institution: 'KHLeuven',
     title: 'Toegepaste Informatica',
   },
+  employers: {
+    playground: {
+      dateFrom: '2002',
+      dateUntil: '2009',
+      description:
+        'In the latter half of my adolescent years I spend most of my summer guarding and animating children of various ages at a local playground.',
+      title: 'Playground',
+    },
+    scouting: {
+      dateFrom: '2005',
+      dateUntil: '2012',
+      description:
+        'For seven years I’ve given life and soul while actively participating in the scouting group of Berg.',
+      title: 'Scouting',
+    },
+    lbi: {
+      description:
+        'Some months after graduation I started at my first job as a junior Java developer at LBi group Belgium. Both my first successes and my first failures were a fact.',
+      dateFrom: '2008',
+      dateUntil: '2011',
+      title: 'LBi Belgium',
+    },
+    cernum: {
+      dateFrom: '2011',
+      dateUntil: '2013',
+      description:
+        'As a Java developer I continued delivering the better crafts of front-end Java code. Though I had fun, I couldn’t help but feeling a deficit inside.',
+      title: 'Cernum',
+    },
+    foursevens: {
+      dateFrom: '2013',
+      dateUntil: '2015',
+      description: `At foursevens I found my true love for development. Web + Mobile + JavaScript! It's a thrill and I loved it.`,
+      title: 'Foursevens',
+    },
+    independant: {
+      dateFrom: '2015',
+      dateUntil: '…',
+      description: `As an independent I'd doing both the same and more of everything I love.`,
+      title: 'Independant',
+    },
+  },
   experience: {
     skills: {
       angular: {
