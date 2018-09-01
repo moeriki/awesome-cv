@@ -38,12 +38,12 @@ export default {
   data() {
     return {
       skills: asArray(data.experience.skills)
-        .filter(({ legacy }) => legacy !== true)
+        .filter(({ score }) => score > 0)
         .map(({ _id, description, score, title }) => ({
           _id,
           description,
-          halfAStar: score > 0 && score % 2 === 1,
-          stars: score > 0 && Math.floor(score / 2),
+          halfAStar: score % 2 === 1,
+          stars: Math.floor(score / 2),
           title,
         })),
     };
