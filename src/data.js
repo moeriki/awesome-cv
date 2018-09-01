@@ -159,6 +159,82 @@ export default {
         score: 0,
         title: 'Amazon Web Services',
       },
+      awsApiGateway: {
+        parent: 'skills.aws',
+        score: 8,
+        title: 'Amazon API Gateway',
+      },
+      awsCloudFormation: {
+        parent: 'skills.aws',
+        score: 6,
+        title: 'Amazon CloudFormation',
+      },
+      awsCloudFront: {
+        parent: 'skills.aws',
+        score: 5,
+        title: 'Amazon CloudFront',
+      },
+      awsCloudWatch: {
+        parent: 'skills.aws',
+        score: 8,
+        title: 'Amazon CloudWatch',
+      },
+      awsDynamodb: {
+        parent: 'skills.aws',
+        score: 8,
+        title: 'Amazon DynamoDB',
+      },
+      awsEc2: {
+        parent: 'skills.aws',
+        score: 5,
+        title: 'Amazon EC2',
+      },
+      awsElasticBeanstalk: {
+        parent: 'skills.aws',
+        score: 0,
+        title: 'Amazon Elastic Beanstalk',
+      },
+      awsIam: {
+        parent: 'skills.aws',
+        score: 10,
+        title: 'Amazon IAM',
+      },
+      awsLambda: {
+        description: 'With Java and NodeJS.',
+        parent: 'skills.aws',
+        score: 9,
+        title: 'Amazon Lambda',
+      },
+      awsRoute53: {
+        parent: 'skills.aws',
+        score: 7,
+        title: 'Amazon Route 53',
+      },
+      awsS3: {
+        parent: 'skills.aws',
+        score: 8,
+        title: 'Amazon S3',
+      },
+      awsSes: {
+        parent: 'skills.aws',
+        score: 8,
+        title: 'Amazon Simple Email Service',
+      },
+      awsSns: {
+        parent: 'skills.aws',
+        score: 8,
+        title: 'Amazon Simple Notification Service',
+      },
+      awsSqs: {
+        parent: 'skills.aws',
+        score: 9,
+        title: 'Amazon Simple Queue Service',
+      },
+      awsWorkMail: {
+        parent: 'skills.aws',
+        score: 0,
+        title: 'Amazon WorkMail',
+      },
       backbone: {
         legacy: true,
         parent: 'categories.stack',
@@ -219,11 +295,6 @@ export default {
         score: 5,
         title: 'Drupal 7',
         description: 'Drupal 7 CMS.',
-      },
-      dynamodb: {
-        parent: 'skills.aws',
-        score: 8,
-        title: 'Amazon DynamoDB',
       },
       eclipse: {
         legacy: true,
@@ -400,12 +471,6 @@ export default {
         score: 10,
         title: 'Koa',
       },
-      lambda: {
-        description: 'With NodeJS.',
-        parent: 'skills.aws',
-        score: 9,
-        title: 'Amazon Lambda',
-      },
       less: {
         parent: 'skills.css',
         score: 7,
@@ -512,11 +577,6 @@ export default {
         score: 0,
         title: 'Ruby on Rails 4',
       },
-      s3: {
-        parent: 'skills.aws',
-        score: 8,
-        title: 'Amazon S3',
-      },
       sass: {
         parent: 'skills.css',
         score: 8,
@@ -527,25 +587,10 @@ export default {
         score: 0,
         title: 'Selligent',
       },
-      ses: {
-        parent: 'skills.aws',
-        score: 8,
-        title: 'Amazon SES',
-      },
-      sns: {
-        parent: 'skills.aws',
-        score: 9,
-        title: 'Amazon SNS',
-      },
       spring: {
         parent: 'skills.java',
         score: 5,
         title: 'Spring 3',
-      },
-      sqs: {
-        parent: 'skills.aws',
-        score: 9,
-        title: 'Amazon SQS',
       },
       stash: {
         legacy: true,
