@@ -8,7 +8,7 @@
             :key="skill._id">
             <v-list-tile-content>
               <v-list-tile-title>{{ skill.title }}</v-list-tile-title>
-              <v-list-tile-sub-title>{{ skill.score }}</v-list-tile-sub-title>
+              <v-list-tile-sub-title>{{ skill.description }}</v-list-tile-sub-title>
             </v-list-tile-content>
             <v-list-tile-action class="stars">
               <v-icon
@@ -34,17 +34,16 @@
 import data from './data';
 import { asArray } from './utils';
 
-const isNoLegacy = ({ legacy }) => legacy !== true;
-
 export default {
   data() {
     return {
       skills: asArray(data.experience.skills)
-        .filter(isNoLegacy)
-        .map(({ _id, score, title }) => ({
+        .filter(({ legacy }) => legacy !== true)
+        .map(({ _id, description, score, title }) => ({
           _id,
-          halfAStar: score && score % 2 === 1,
-          stars: score && Math.floor(score / 2),
+          description,
+          halfAStar: score > 0 && score % 2 === 1,
+          stars: score > 0 && Math.floor(score / 2),
           title,
         })),
     };
