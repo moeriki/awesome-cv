@@ -9,7 +9,7 @@ export default {
     clients: {
       belgacom: { title: 'Belgacom' },
       medialaan: { title: 'MEDIALAAN' },
-      scoutingBerg: { title: 'Scouts Berg' },
+      scoutsBerg: { title: 'Scouts Berg' },
       sigedis: { title: 'Sigedis' },
       tme: { title: 'Toyota Motor Europe' },
       vanerum: { title: 'Vanerum' },
@@ -112,7 +112,7 @@ export default {
         dateUntil: '2013',
         description:
           'Our local youth movement was need of an active web presence improving communication with both the children and their parents.',
-        employerId: 'independant',
+        employerId: 'moeriki',
         role: 'One-Man Band',
         title: 'Scouts Berg',
       },

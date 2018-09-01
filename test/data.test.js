@@ -2,8 +2,20 @@ import data from '../src/data';
 
 describe('data', () => {
   const {
-    experience: { skills },
+    experience: { clients, employers, skills, projects },
   } = data;
+
+  describe('projects', () => {
+    describe.each(Object.entries(projects))('%s', (key, project) => {
+      it('should have a valid clientId', () => {
+        expect(clients).toHaveProperty(project.clientId);
+      });
+
+      it('should have a valid employerId', () => {
+        expect(employers).toHaveProperty(project.employerId);
+      });
+    });
+  });
 
   describe('skills', () => {
     describe.each(Object.entries(skills))('%s', (key, skill) => {
