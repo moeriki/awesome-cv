@@ -9,9 +9,9 @@ export default {
     clients: {
       belgacom: { title: 'Belgacom' },
       medialaan: { title: 'MEDIALAAN' },
-      scoutingBerg: { title: 'Scouting Berg' },
+      scoutingBerg: { title: 'Scouts Berg' },
       sigedis: { title: 'Sigedis' },
-      tme: { title: 'Toyota Motors Europe' },
+      tme: { title: 'Toyota Motor Europe' },
       vanerum: { title: 'Vanerum' },
     },
     education: {
@@ -26,11 +26,11 @@ export default {
         dateFrom: '2002',
         dateUntil: '2009',
         description:
-          'In the latter half of my adolescent years I spend most of my summer guarding and animating children of various ages at a local playground.',
+          'In the latter half of my adolescent years I spend half of my summer animating children of various ages at the local playground.',
         location: 'Kampenhout',
-        title: 'Playground',
+        title: "'t Grobbeltje",
       },
-      scouting: {
+      scoutsBerg: {
         dateFrom: '2005',
         dateUntil: '2012',
         description:
@@ -40,7 +40,7 @@ export default {
       },
       lbi: {
         description:
-          'Some months after graduation I started at my first job as a junior Java developer at LBi group Belgium. Both my first successes and my first failures were a fact.',
+          'Some months after graduation I started at my first job as a junior Java developer at LBi Belgium. My first failures and successes were a fact.',
         dateFrom: '2008',
         dateUntil: '2011',
         title: 'LBi Belgium',
@@ -54,15 +54,15 @@ export default {
       },
       foursevens: {
         dateFrom: '2013',
-        dateUntil: '2015',
-        description: `At foursevens I found my true love for development. Web + Mobile + JavaScript! It's a thrill and I loved it.`,
+        dateUntil: '…',
+        description: `At foursevens I found my true love for development. JavaScript from back, to front, to back again! It's a thrill and I love it.`,
         title: 'Foursevens',
       },
-      independant: {
+      moeriki: {
         dateFrom: '2015',
         dateUntil: '…',
-        description: `As an independent I'd doing both the same and more of everything I love.`,
-        title: 'Independant',
+        description: `As an independent I'm doing the same and more of everything I love.`,
+        title: 'moeriki BVBA',
       },
     },
     projects: {
@@ -73,8 +73,7 @@ export default {
         description:
           'In order to have better control over fiscal and social data concerning the second pension pillar in Belgium a database has been under development since two years. This will contain personal data about the additional pension funds for employers, self-employed and officials.',
         employerId: 'cernum',
-        role:
-          'Development of multiple frontends in Spring MVC and Struts, additionally a backend module for data validation.',
+        role: 'Developer',
         title: 'DB2P',
       },
       leadMgmt: {
@@ -82,7 +81,7 @@ export default {
         dateFrom: '2015',
         dateUntil: '2016',
         description:
-          'For a more managed follow-up of leads we are developing a group of AWS micro-services that will automate the capturing, processing and maintenance of lead data.',
+          'To follow-up customer leads we developed an automated system to capture, process and maintain data.',
         employerId: 'foursevens',
         role: 'Lead Developer',
         title: 'Lead Management',
@@ -92,7 +91,7 @@ export default {
         dateFrom: '2013',
         dateUntil: '2015',
         description:
-          'We are creating an interactive whiteboard web application to complement the hardware Vanerum sells to educational institutions. This involves a complex front-end architecture to ensure minimum maintenance and maximum flexibility towards additional future developments. The purpose of this beautiful and ambitious project, created in alliance with XAOP, is to empower teachers in all fields of education.',
+          'We created an interactive whiteboard web application to complement the hardware Vanerum sells to educational institutions.',
         employerId: 'foursevens',
         role: 'Architect, Lead Developer',
         title: 'i3LEARNHUB',
@@ -102,31 +101,36 @@ export default {
         dateFrom: '2016',
         dateUntil: '2018',
         description:
-          'In an ever-changing digital landscape the medialaan New Media teams crafts and maintains services for serving video content live and on demand to consumers. Paired with a varying slew of microservices the challenge never ends.',
+          'In an ever-changing digital landscape the medialaan New Media team crafts and maintains services for delivering TV data, on-demand, and live video content.',
         employerId: 'foursevens',
-        role: 'Lead Developer',
+        role: 'Developer',
         title: 'Medialaan',
       },
-      scoutingBerg: {
-        clientId: 'scoutingBerg',
+      scoutsBerg: {
+        clientId: 'scoutsBerg',
         dateFrom: '2011',
         dateUntil: '2013',
         description:
-          'Scouting Berg is a local youth movement in need of an active web presence, which improves contact with both the children and their parents.',
+          'Our local youth movement was need of an active web presence improving communication with both the children and their parents.',
         employerId: 'independant',
-        role: 'Solo Developer, Maintainer',
-        title: 'Scouting Berg',
+        role: 'One-Man Band',
+        title: 'Scouts Berg',
       },
       ucms: {
         clientId: 'belgacom',
         dateFrom: '2009',
         dateUntil: '2011',
         description:
-          'uCMS is a unified CMS for the Belgacom Group based on the LiveSite CMS. For this ambitious project we would implement an abstract unified system we could use as base to develop the future public sites of Belgacom.',
+          'uCMS is a unified CMS for the former Belgacom Group based on the LiveSite CMS.',
         employerId: 'lbi',
         role: 'Developer',
         title: 'uCMS',
       },
+      // {
+      //   clientId: 'cm',
+      //   dateFrom: '2018/9',
+      //   dateUntil: '…',
+      // }
     },
     skills: {
       angularJs: {
@@ -158,17 +162,17 @@ export default {
       backbone: {
         legacy: true,
         parent: 'categories.stack',
-        title: 'Backbone',
+        title: 'Backbone.js',
       },
       bamboo: {
         parent: 'categories.tools',
         score: 7,
-        title: 'Bamboo',
+        title: 'Atlassian Bamboo',
       },
       bitbucket: {
         parent: 'skills.git',
         score: 0,
-        title: 'BitBucket',
+        title: 'Atlassian BitBucket',
       },
       bootstrap: {
         parent: 'categories.stack',
@@ -219,7 +223,7 @@ export default {
       dynamodb: {
         parent: 'skills.aws',
         score: 8,
-        title: 'DynamoDB',
+        title: 'Amazon DynamoDB',
       },
       eclipse: {
         legacy: true,
@@ -229,7 +233,7 @@ export default {
       elasticSearch: {
         parent: 'categories.stack',
         score: 6,
-        title: 'ElasticSearch',
+        title: 'Elasticsearch',
       },
       en: {
         parent: 'categories.language',
@@ -304,7 +308,7 @@ export default {
       handlebars: {
         legacy: true,
         parent: 'categories.stack',
-        title: 'Handlebars',
+        title: 'Handlebars.js',
       },
       html: {
         parent: 'categories.stack',
@@ -369,7 +373,7 @@ export default {
       jira: {
         parent: 'categories.tools',
         score: 8,
-        title: 'JIRA',
+        title: 'Atlassian Jira',
       },
       json: {
         parent: 'categories.stack',
@@ -400,12 +404,12 @@ export default {
         description: 'With NodeJS.',
         parent: 'skills.aws',
         score: 9,
-        title: 'Lambda',
+        title: 'Amazon Lambda',
       },
       less: {
         parent: 'skills.css',
         score: 7,
-        title: 'LESS',
+        title: 'Less.js',
       },
       lodash: {
         description: 'I love Lodash FP!',
@@ -421,7 +425,7 @@ export default {
       logStash: {
         parent: 'categories.stack',
         score: 0,
-        title: 'LogStash',
+        title: 'Logstash',
       },
       maven: {
         parent: 'skills.java',
@@ -456,7 +460,7 @@ export default {
       nodeJs: {
         parent: 'skills.javaScript',
         score: 8,
-        title: 'NodeJS',
+        title: 'Node.js',
       },
       npm: {
         parent: 'skills.nodeJs',
@@ -511,12 +515,12 @@ export default {
       s3: {
         parent: 'skills.aws',
         score: 8,
-        title: 'S3',
+        title: 'Amazon S3',
       },
-      scss: {
+      sass: {
         parent: 'skills.css',
         score: 8,
-        title: 'SCSS',
+        title: 'Sass / SCSS',
       },
       selligent: {
         parent: 'categories.stack',
@@ -526,12 +530,12 @@ export default {
       ses: {
         parent: 'skills.aws',
         score: 8,
-        title: 'SES',
+        title: 'Amazon SES',
       },
       sns: {
         parent: 'skills.aws',
         score: 9,
-        title: 'SNS',
+        title: 'Amazon SNS',
       },
       spring: {
         parent: 'skills.java',
@@ -541,12 +545,12 @@ export default {
       sqs: {
         parent: 'skills.aws',
         score: 9,
-        title: 'SQS',
+        title: 'Amazon SQS',
       },
       stash: {
         legacy: true,
         parent: 'skills.git',
-        title: 'Stash',
+        title: 'Atlassian Stash',
       },
       struts: {
         legacy: true,
@@ -566,7 +570,7 @@ export default {
       teamSite: {
         legacy: true,
         parent: 'skills.java',
-        title: 'TeamSite / LiveSite',
+        title: 'TeamSite / liveSite',
       },
       tinyMce: {
         legacy: true,
@@ -576,12 +580,12 @@ export default {
       tomcat: {
         parent: 'skills.java',
         score: 0,
-        title: 'Tomcat',
+        title: 'Apache Tomcat',
       },
       underscore: {
         legacy: true,
         parent: 'skills.javaScript',
-        title: 'Underscore',
+        title: 'Underscore.js',
       },
       vsCode: {
         parent: 'categories.tools',
