@@ -26,7 +26,7 @@ export default {
         dateFrom: '2002',
         dateUntil: '2009',
         description:
-          'In the latter half of my adolescent years I spend half of my summer animating children of various ages at the local playground.',
+          'In the latter half of my adolescent years I spent half of my summer animating children of various ages at the local playground.',
         location: 'Kampenhout',
         title: "'t Grobbeltje",
       },
@@ -40,7 +40,7 @@ export default {
       },
       lbi: {
         description:
-          'Some months after graduation I started at my first job as a junior Java developer at LBi Belgium. My first failures and successes were a fact.',
+          'Some months after graduation I started my first job as a junior Java developer at LBi Belgium. My first failures and successes were a fact.',
         dateFrom: '2008',
         dateUntil: '2011',
         title: 'LBi Belgium',
@@ -81,7 +81,7 @@ export default {
         dateFrom: '2015',
         dateUntil: '2016',
         description:
-          'To follow-up customer leads we developed an automated system to capture, process and maintain data.',
+          'To follow up customer leads we developed an automated system to capture, process and maintain data.',
         employerId: 'foursevens',
         role: 'Lead Developer',
         title: 'Lead Management',
@@ -111,7 +111,7 @@ export default {
         dateFrom: '2011',
         dateUntil: '2013',
         description:
-          'Our local youth movement was need of an active web presence improving communication with both the children and their parents.',
+          'Our local youth movement was in need of an active web presence improving communication with both the children and their parents.',
         employerId: 'moeriki',
         role: 'One-Man Band',
         title: 'Scouts Berg',
