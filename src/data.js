@@ -119,7 +119,7 @@ export default {
         description:
           'Our local youth movement was in need of an active web presence improving communication with both the children and their parents.',
         employerId: 'independent',
-        role: 'One-Man Band',
+        role: 'Content Manager, Designer, Operations',
         title: 'Scouts Berg',
       },
       ucms: {
