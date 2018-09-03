@@ -64,6 +64,12 @@ export default {
         description: `As an independent I'm doing the same and more of everything I love.`,
         title: 'moeriki BVBA',
       },
+      independent: {
+        dateFrom: '2008',
+        dateUntil: '…',
+        description: `Sometimes I work for fun.`,
+        title: 'Independent',
+      },
     },
     projects: {
       db2p: {
@@ -112,7 +118,7 @@ export default {
         dateUntil: '2013',
         description:
           'Our local youth movement was in need of an active web presence improving communication with both the children and their parents.',
-        employerId: 'moeriki',
+        employerId: 'independent',
         role: 'One-Man Band',
         title: 'Scouts Berg',
       },
