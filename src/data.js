@@ -99,7 +99,7 @@ export default {
       medialaan: {
         clientId: 'medialaan',
         dateFrom: '2016',
-        dateUntil: '2018',
+        dateUntil: '…',
         description:
           'In an ever-changing digital landscape the medialaan New Media team crafts and maintains services for delivering TV data, on-demand, and live video content.',
         employerId: 'foursevens',
