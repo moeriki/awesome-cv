@@ -10,6 +10,7 @@ export default {
       belgacom: { title: 'Belgacom' },
       medialaan: { title: 'MEDIALAAN' },
       scoutsBerg: { title: 'Scouts Berg' },
+      scp: { title: 'Sandy Croes Photography' },
       sigedis: { title: 'Sigedis' },
       tme: { title: 'Toyota Motor Europe' },
       vanerum: { title: 'Vanerum' },
@@ -111,6 +112,15 @@ export default {
         employerId: 'foursevens',
         role: 'Developer',
         title: 'Medialaan',
+      },
+      scp: {
+        clientId: 'scp',
+        dateFrom: '2016',
+        dateUntil: '…',
+        description: 'Sandy Croes is a photographer with an online portfolio.',
+        employerId: 'moeriki',
+        role: 'Admin, Operations',
+        title: 'Sandy Croes Photography',
       },
       scoutsBerg: {
         clientId: 'scoutsBerg',
