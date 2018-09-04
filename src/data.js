@@ -65,7 +65,7 @@ export default {
       foursevens: {
         dateFrom: '2013',
         dateUntil: '…',
-        description: `At foursevens I found my true love for development. JavaScript from back, to front, to back again! It's a thrill and I love it.`,
+        description: `At foursevens I found my true love for development. JavaScript from back to front, to back again! It's a thrill and I love it.`,
         link: 'https://foursevens.be',
         title: 'Foursevens',
       },
