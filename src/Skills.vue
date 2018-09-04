@@ -10,19 +10,13 @@
               <v-list-tile-title>{{ skill.title }}</v-list-tile-title>
               <v-list-tile-sub-title>{{ skill.description }}</v-list-tile-sub-title>
             </v-list-tile-content>
-            <v-list-tile-action class="stars">
-              <v-icon
-                class="halfAStar"
-                v-if="skill.halfAStar">
-                fas fa-star-half
-              </v-icon>
-              <v-icon
-                v-if="skill.stars"
-                v-for="index in skill.stars"
-                :key="index">
-                fas fa-star
-              </v-icon>
-            </v-list-tile-action>
+            <v-list-action class="stars">
+              <v-rating
+                half-increments
+                large
+                readonly
+                :value="skill.stars" />
+            </v-list-action>
           </v-list-tile>
         </v-list>
       </v-card>
@@ -38,12 +32,11 @@ export default {
   data() {
     return {
       skills: asArray(data.experience.skills)
-        .filter(({ score }) => score != null)
+        .filter(({ score }) => score >= 5)
         .map(({ _id, description, score, title }) => ({
           _id,
           description,
-          halfAStar: score % 2 === 1,
-          stars: Math.floor(score / 2),
+          stars: score / 2,
           title,
         })),
     };
@@ -53,11 +46,6 @@ export default {
 
 <style scoped>
 .stars {
-  align-items: center;
-  flex-direction: row;
-  justify-content: flex-end;
-}
-.halfAStar {
   transform: scaleX(-1);
 }
 </style>
