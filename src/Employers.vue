@@ -10,16 +10,10 @@
               <h5 class="headline">
                 {{ employer.title }}
                 <external-link :link="employer.link" />
-                <span class="subheading grey--text">
-                  <span
-                    v-if="employer.location"
-                    class="location">
-                    {{ employer.location }}
-                  </span>
-                  <span class="timespan">
-                    {{ employer.dateFrom }} &ndash; {{ employer.dateUntil }}
-                  </span>
-                </span>
+                <timespan
+                  :date-from="employer.dateFrom"
+                  :date-until="employer.dateUntil"
+                  :text="employer.location" />
               </h5>
             </v-card-title>
             <v-card-text>{{ employer.description }}</v-card-text>
@@ -38,10 +32,11 @@
 import data from './data';
 import { asArray, matchesProperty, orderBy } from './utils';
 import ExternalLink from './components/ExternalLink.vue';
+import Timespan from './components/Timespan.vue';
 import Projects from './Projects.vue';
 
 export default {
-  components: { ExternalLink, Projects },
+  components: { ExternalLink, Projects, Timespan },
   data() {
     return {
       employers: asArray(data.experience.employers)

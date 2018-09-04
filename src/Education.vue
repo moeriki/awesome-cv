@@ -13,9 +13,10 @@
             </v-list-tile-action>
             <h5 class="headline">
               {{ education.title }}
-              <span class="subheading grey--text">
-                {{ education.location }}, {{ education.dateFrom }} &ndash; {{ education.dateUntil }}
-              </span>
+              <timespan
+                :text="education.location"
+                :date-from="education.dateFrom"
+                :date-until="education.dateUntil" />
             </h5>
           </v-list-tile>
         </v-list>
@@ -26,8 +27,10 @@
 
 <script>
 import data from './data';
+import Timespan from './components/Timespan.vue';
 
 export default {
+  components: { Timespan },
   data() {
     return {
       education: data.experience.education,

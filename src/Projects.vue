@@ -10,9 +10,10 @@
         <external-link
           :link="project.link"
           small />
-        <span class="subheading grey--text">
-          {{ clients[project.clientId].title }}, {{ project.dateFrom }} &ndash; {{ project.dateUntil }}
-        </span>
+        <timespan
+          :date-from="project.dateFrom"
+          :date-until="project.dateUntil"
+          :text="clients[project.clientId].title" />
       </h6>
       <v-card>
         <v-card-title class="role">
@@ -27,9 +28,10 @@
 <script>
 import data from './data';
 import ExternalLink from './components/ExternalLink.vue';
+import Timespan from './components/Timespan.vue';
 
 export default {
-  components: { ExternalLink },
+  components: { ExternalLink, Timespan },
   data() {
     return {
       clients: data.experience.clients,
