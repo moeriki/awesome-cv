@@ -7,6 +7,9 @@
         class="title font-weight-light"
         slot="header">
         {{ project.title }}
+        <external-link
+          :link="project.link"
+          small />
         <span class="subheading grey--text">
           {{ clients[project.clientId].title }}, {{ project.dateFrom }} &ndash; {{ project.dateUntil }}
         </span>
@@ -23,8 +26,10 @@
 
 <script>
 import data from './data';
+import ExternalLink from './ExternalLink.vue';
 
 export default {
+  components: { ExternalLink },
   data() {
     return {
       clients: data.experience.clients,

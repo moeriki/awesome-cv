@@ -43,7 +43,7 @@ const clients = {
   patternProperties: {
     [PATTERN_ID]: {
       type: 'object',
-      properties: { title: string },
+      properties: { title: string, link },
       additionalProperties: false,
       required: ['title'],
     },
@@ -73,6 +73,7 @@ const employers = {
         dateFrom: date,
         dateUntil: date,
         description: { type: 'string' },
+        link,
         location: { type: 'string' },
         title: { type: 'string' },
       },
@@ -94,6 +95,7 @@ const projects = {
         dateUntil: date,
         description: string,
         employerId: _id,
+        link,
         role: string,
         title: string,
       },
@@ -121,6 +123,7 @@ const skills = {
         parent: { type: 'string', pattern: '^(categories|skills).\\w+$' },
         description: string,
         legacy: { type: 'boolean' },
+        link,
         score: { type: 'number' },
         title: string,
       },

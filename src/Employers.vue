@@ -9,6 +9,7 @@
             <v-card-title primary-title>
               <h5 class="headline">
                 {{ employer.title }}
+                <external-link :link="employer.link" />
                 <span class="subheading grey--text">
                   <span
                     v-if="employer.location"
@@ -36,10 +37,11 @@
 <script>
 import data from './data';
 import { asArray, matchesProperty, orderBy } from './utils';
+import ExternalLink from './ExternalLink.vue';
 import Projects from './Projects.vue';
 
 export default {
-  components: { Projects },
+  components: { ExternalLink, Projects },
   data() {
     return {
       employers: asArray(data.experience.employers)

@@ -7,13 +7,20 @@ export default {
       tools: { title: 'Tools' },
     },
     clients: {
-      belgacom: { title: 'Belgacom' },
-      medialaan: { title: 'MEDIALAAN' },
-      scoutsBerg: { title: 'Scouts Berg' },
-      scp: { title: 'Sandy Croes Photography' },
-      sigedis: { title: 'Sigedis' },
-      tme: { title: 'Toyota Motor Europe' },
-      vanerum: { title: 'Vanerum' },
+      belgacom: { title: 'Belgacom', link: 'https://www.proximus.be' },
+      medialaan: { title: 'MEDIALAAN', link: 'https://medialaan.be' },
+      scoutsBerg: { title: 'Scouts Berg', link: 'https://scoutsberg.be' },
+      scp: { title: 'Sandy Croes Photography', link: 'https://sandycroes.be' },
+      sigedis: { title: 'Sigedis', link: 'https://www.sigedis.be' },
+      tme: {
+        title: 'Toyota Motor Europe',
+        link: 'https://www.toyota-europe.com',
+      },
+      vanerum: {
+        title: 'Vanerum',
+        // NOTE wait for https to work
+        // link: 'https://vanerum.com'
+      },
     },
     education: {
       dateFrom: '2004',
@@ -28,6 +35,7 @@ export default {
         dateUntil: '2009',
         description:
           'In the latter half of my adolescent years I spent half of my summer animating children of various ages at the local playground.',
+        link: 'https://www.kampenhout.be/be-oke',
         location: 'Kampenhout',
         title: "'t Grobbeltje",
       },
@@ -36,6 +44,7 @@ export default {
         dateUntil: '2012',
         description:
           'For seven years I’ve given life and soul while actively participating in the scouting group of Berg.',
+        link: 'https://scoutsberg.be',
         location: 'Berg',
         title: 'Scouting',
       },
@@ -57,6 +66,7 @@ export default {
         dateFrom: '2013',
         dateUntil: '…',
         description: `At foursevens I found my true love for development. JavaScript from back, to front, to back again! It's a thrill and I love it.`,
+        link: 'https://foursevens.be',
         title: 'Foursevens',
       },
       moeriki: {
@@ -80,6 +90,8 @@ export default {
         description:
           'In order to have better control over fiscal and social data concerning the second pension pillar in Belgium a database has been under development since two years. This will contain personal data about the additional pension funds for employers, self-employed and officials.',
         employerId: 'cernum',
+        // NOTE wait for site to be https
+        // link: 'https://db2p.be',
         role: 'Developer',
         title: 'DB2P',
       },
@@ -100,6 +112,7 @@ export default {
         description:
           'We created an interactive whiteboard web application to complement the hardware Vanerum sells to educational institutions.',
         employerId: 'foursevens',
+        link: 'https://www.i3learnhub.com',
         role: 'Architect, Lead Developer',
         title: 'i3LEARNHUB',
       },
@@ -119,6 +132,7 @@ export default {
         dateUntil: '…',
         description: 'Sandy Croes is a photographer with an online portfolio.',
         employerId: 'moeriki',
+        link: 'https://sandycroes.be',
         role: 'Admin, Operations',
         title: 'Sandy Croes Photography',
       },
@@ -129,6 +143,7 @@ export default {
         description:
           'Our local youth movement was in need of an active web presence improving communication with both the children and their parents.',
         employerId: 'independent',
+        link: 'https://scoutsberg.be',
         role: 'Content Manager, Designer, Operations',
         title: 'Scouts Berg',
       },
@@ -142,11 +157,6 @@ export default {
         role: 'Developer',
         title: 'uCMS',
       },
-      // {
-      //   clientId: 'cm',
-      //   dateFrom: '2018/9',
-      //   dateUntil: '…',
-      // }
     },
     skills: {
       angularJs: {
