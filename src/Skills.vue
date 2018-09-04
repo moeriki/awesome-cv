@@ -10,13 +10,13 @@
               <v-list-tile-title>{{ skill.title }}</v-list-tile-title>
               <v-list-tile-sub-title>{{ skill.description }}</v-list-tile-sub-title>
             </v-list-tile-content>
-            <v-list-action class="stars">
+            <v-list-tile-action class="stars">
               <v-rating
                 half-increments
                 large
                 readonly
                 :value="skill.stars" />
-            </v-list-action>
+            </v-list-tile-action>
           </v-list-tile>
         </v-list>
       </v-card>
