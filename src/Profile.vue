@@ -26,11 +26,9 @@
 </template>
 
 <script>
-import Avatar from './Avatar.vue';
 import data from './data';
 
 export default {
-  components: { Avatar },
   data() {
     return {
       contacts: data.profile.contacts,

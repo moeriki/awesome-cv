@@ -3,7 +3,11 @@
     <v-flex
       xs12
       text-xs-center>
-      <avatar />
+      <v-avatar size=150>
+        <img
+          :alt="`Picture of ${name}.`"
+          src="./assets/profile.jpg">
+      </v-avatar>
     </v-flex>
     <v-flex
       xs12
@@ -16,11 +20,9 @@
 </template>
 
 <script>
-import Avatar from './Avatar.vue';
 import data from './data';
 
 export default {
-  components: { Avatar },
   data() {
     return {
       contacts: data.profile.contacts,
