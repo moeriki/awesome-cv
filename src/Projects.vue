@@ -26,7 +26,7 @@
 
 <script>
 import data from './data';
-import ExternalLink from './ExternalLink.vue';
+import ExternalLink from './components/ExternalLink.vue';
 
 export default {
   components: { ExternalLink },

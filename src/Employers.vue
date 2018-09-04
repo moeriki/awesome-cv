@@ -37,7 +37,7 @@
 <script>
 import data from './data';
 import { asArray, matchesProperty, orderBy } from './utils';
-import ExternalLink from './ExternalLink.vue';
+import ExternalLink from './components/ExternalLink.vue';
 import Projects from './Projects.vue';
 
 export default {
