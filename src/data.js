@@ -181,11 +181,13 @@ export default {
         title: 'Atom',
       },
       aws: {
+        icon: 'fa fa-heart',
         parent: 'categories.stack',
         score: 0,
         title: 'Amazon Web Services',
       },
       awsApiGateway: {
+        icon: 'fa fa-heart',
         parent: 'skills.aws',
         score: 8,
         title: 'Amazon API Gateway',
@@ -206,6 +208,7 @@ export default {
         title: 'Amazon CloudWatch',
       },
       awsDynamodb: {
+        icon: 'fa fa-heart',
         parent: 'skills.aws',
         score: 8,
         title: 'Amazon DynamoDB',
@@ -226,6 +229,7 @@ export default {
         title: 'Amazon IAM',
       },
       awsLambda: {
+        icon: 'fa fa-heart',
         description: 'With Java and NodeJS.',
         parent: 'skills.aws',
         score: 9,
@@ -247,11 +251,13 @@ export default {
         title: 'Amazon Simple Email Service',
       },
       awsSns: {
+        icon: 'fa fa-heart',
         parent: 'skills.aws',
         score: 8,
         title: 'Amazon Simple Notification Service',
       },
       awsSqs: {
+        icon: 'fa fa-heart',
         parent: 'skills.aws',
         score: 9,
         title: 'Amazon Simple Queue Service',
@@ -262,6 +268,7 @@ export default {
         title: 'Amazon WorkMail',
       },
       babel: {
+        icon: 'fa fa-heart',
         parent: 'skills.javaScript',
         score: 9,
         title: 'Babel',
@@ -333,6 +340,7 @@ export default {
         title: 'Elasticsearch',
       },
       en: {
+        icon: 'fa fa-heart',
         parent: 'categories.language',
         score: 10,
         title: 'English 🇬🇧󠁧󠁿',
@@ -363,6 +371,7 @@ export default {
         title: 'ES5',
       },
       eslint: {
+        icon: 'fa fa-heart',
         parent: 'skills.javaScript',
         score: 10,
         title: 'ESLint',
@@ -383,6 +392,7 @@ export default {
         title: 'Gigya',
       },
       git: {
+        icon: 'fa fa-heart',
         parent: 'categories.tools',
         score: 8,
         title: 'Git',
@@ -468,6 +478,7 @@ export default {
         title: 'Java 8',
       },
       javaScript: {
+        icon: 'fa fa-heart',
         parent: 'categories.language',
         score: 10,
         title: 'JavaScript',
@@ -478,16 +489,19 @@ export default {
         title: 'JBoss',
       },
       jest: {
+        icon: 'fa fa-heart',
         parent: 'skills.javaScript',
         score: 10,
         title: 'Jest',
       },
       jira: {
+        icon: 'fa fa-heart',
         parent: 'categories.tools',
         score: 8,
         title: 'Atlassian Jira',
       },
       json: {
+        icon: 'fa fa-heart',
         parent: 'categories.stack',
         score: 10,
         title: 'JSON',
@@ -508,6 +522,7 @@ export default {
         title: 'KineticJS',
       },
       koa: {
+        icon: 'fa fa-heart',
         parent: 'skills.javaScript',
         score: 10,
         title: 'Koa',
@@ -518,6 +533,7 @@ export default {
         title: 'Less.js',
       },
       lodash: {
+        icon: 'fa fa-heart',
         description: 'I love Lodash FP!',
         parent: 'skills.javaScript',
         score: 9,
@@ -564,11 +580,13 @@ export default {
         title: 'Dutch 🇳🇱',
       },
       nodeJs: {
+        icon: 'fa fa-heart',
         parent: 'skills.javaScript',
         score: 8,
         title: 'Node.js',
       },
       npm: {
+        icon: 'fa fa-heart',
         parent: 'skills.nodeJs',
         score: 10,
         title: 'npm',
@@ -609,6 +627,7 @@ export default {
         title: 'RequireJS',
       },
       rest: {
+        icon: 'fa fa-heart',
         parent: 'categories.stack',
         score: 9,
         title: 'REST',
@@ -664,6 +683,7 @@ export default {
         title: 'TeamSite / liveSite',
       },
       terraform: {
+        icon: 'fa fa-heart',
         description: 'With AWS.',
         parent: 'categories.stack',
         score: 7,
@@ -685,11 +705,13 @@ export default {
         title: 'Underscore.js',
       },
       vsCode: {
+        icon: 'fa fa-heart',
         parent: 'categories.tools',
         score: 0,
         title: 'Visual Studio Code',
       },
       vue: {
+        icon: 'fa fa-heart',
         parent: 'skills.javaScript',
         description: 'Version 2.x.',
         score: 6,

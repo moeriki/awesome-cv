@@ -7,7 +7,16 @@
             v-for="skill in skills"
             :key="skill._id">
             <v-list-tile-content>
-              <v-list-tile-title>{{ skill.title }}</v-list-tile-title>
+              <v-list-tile-title>
+                {{ skill.title }}
+                <span :v-if="skill.icon">
+                  <v-icon
+                    color="red darken-2"
+                    small>
+                    {{ skill.icon }}
+                  </v-icon>
+                </span>
+              </v-list-tile-title>
               <v-list-tile-sub-title>{{ skill.description }}</v-list-tile-sub-title>
             </v-list-tile-content>
             <v-list-tile-action class="stars">
@@ -33,11 +42,10 @@ export default {
     return {
       skills: asArray(data.experience.skills)
         .filter(({ score }) => score >= 5)
-        .map(({ _id, description, score, title }) => ({
-          _id,
-          description,
+        .map(({ score, ...props }) => ({
+          ...props,
+          score,
           stars: score / 2,
-          title,
         })),
     };
   },

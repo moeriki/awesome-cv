@@ -10,7 +10,7 @@ const _id = { type: 'string', pattern: PATTERN_ID };
 
 const date = { type: 'string', pattern: '^(20(0|1|2)\\d(/(0|1)\\d)?|…)$' };
 
-const icon = { type: 'string', pattern: '^fa. fa-[a-z-]+$' };
+const icon = { type: 'string', pattern: '^fa(l)? fa-[a-z-]+$' };
 
 const link = { type: 'string', format: 'url' };
 
@@ -122,6 +122,7 @@ const skills = {
       properties: {
         parent: { type: 'string', pattern: '^(categories|skills).\\w+$' },
         description: string,
+        icon,
         legacy: { type: 'boolean' },
         link,
         score: { type: 'number' },
