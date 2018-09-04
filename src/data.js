@@ -611,6 +611,12 @@ export default {
         score: 7,
         title: 'PhpMyAdmin',
       },
+      prettier: {
+        icon: 'fa fa-heart',
+        parent: 'skills.javaScript',
+        score: 10,
+        title: 'Prettier',
+      },
       python: {
         parent: 'categories.language',
         score: 0,
@@ -742,6 +748,12 @@ export default {
         parent: 'skills.xml',
         score: 5,
         title: 'XSLT / XPath',
+      },
+      yarn: {
+        icon: 'fa fa-heart',
+        parent: 'skills.nodeJs',
+        score: 10,
+        title: 'Yarn',
       },
     },
   },
