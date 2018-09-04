@@ -251,6 +251,11 @@ export default {
         score: 0,
         title: 'Amazon WorkMail',
       },
+      babel: {
+        parent: 'skills.javaScript',
+        score: 9,
+        title: 'Babel',
+      },
       backbone: {
         legacy: true,
         parent: 'categories.stack',
@@ -302,15 +307,10 @@ export default {
         title: 'CSS',
       },
       drupal: {
+        description: 'Version 6 and 7, as CMS.',
         parent: 'categories.stack',
-        score: 0,
-        title: 'Drupal',
-      },
-      drupal7: {
-        parent: 'skills.drupal',
         score: 5,
-        title: 'Drupal 7',
-        description: 'Drupal 7 CMS.',
+        title: 'Drupal',
       },
       eclipse: {
         legacy: true,
@@ -351,6 +351,11 @@ export default {
         parent: 'skills.javaScript',
         score: 10,
         title: 'ES5',
+      },
+      eslint: {
+        parent: 'skills.javaScript',
+        score: 10,
+        title: 'ESLint',
       },
       express: {
         parent: 'categories.stack',
@@ -411,6 +416,16 @@ export default {
         parent: 'skills.html',
         score: 7,
         title: 'HTML 5',
+      },
+      icinga: {
+        parent: 'categories.tools',
+        score: 6,
+        title: 'Icinga',
+      },
+      jenkins: {
+        parent: 'categories.tools',
+        score: 7,
+        title: 'Jenkins',
       },
       jQuery: {
         parent: 'skills.javaScript',
@@ -548,6 +563,11 @@ export default {
         score: 10,
         title: 'npm',
       },
+      parcel: {
+        parent: 'skills.javaScript',
+        score: 7,
+        title: 'parcel',
+      },
       phoneGap: {
         parent: 'categories.stack',
         score: 0,
@@ -633,6 +653,12 @@ export default {
         parent: 'skills.java',
         title: 'TeamSite / liveSite',
       },
+      terraform: {
+        description: 'With AWS.',
+        parent: 'categories.stack',
+        score: 7,
+        title: 'Terraform',
+      },
       tinyMce: {
         legacy: true,
         parent: 'skills.javaScript',
@@ -653,10 +679,27 @@ export default {
         score: 0,
         title: 'Visual Studio Code',
       },
+      vue: {
+        parent: 'skills.javaScript',
+        description: 'Version 2.x.',
+        score: 6,
+        title: 'Vue.js',
+      },
+      webpack: {
+        parent: 'skills.javaScript',
+        score: 6,
+        title: 'webpack',
+      },
       winston: {
         parent: 'skills.javaScript',
         score: 9,
         title: 'Winston',
+      },
+      wordpress: {
+        description: 'Version 4.x, as CMS.',
+        parent: 'categories.stack',
+        score: 6,
+        title: 'Wordpress',
       },
       xml: {
         parent: 'categories.stack',
