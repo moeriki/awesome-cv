@@ -38,7 +38,7 @@ export default {
   data() {
     return {
       skills: asArray(data.experience.skills)
-        .filter(({ score }) => score > 0)
+        .filter(({ score }) => score != null)
         .map(({ _id, description, score, title }) => ({
           _id,
           description,
