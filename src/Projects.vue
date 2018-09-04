@@ -8,7 +8,7 @@
         slot="header">
         {{ project.title }}
         <external-link
-          :link="project.link"
+          :link="project.link || clients[project.clientId].link"
           small />
         <timespan
           :date-from="project.dateFrom"
@@ -38,6 +38,7 @@ export default {
     };
   },
   props: {
+    defaultLink: { default: null, type: String },
     projects: { required: true, type: Array },
   },
 };
