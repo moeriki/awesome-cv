@@ -14,7 +14,7 @@
         <timespan
           :date-from="project.dateFrom"
           :date-until="project.dateUntil"
-          :text="clients[project.clientId].title" />
+          :text="clients[project.clientId].title === project.title ? null : clients[project.clientId].title" />
       </h6>
       <v-card>
         <v-card-title class="role">
