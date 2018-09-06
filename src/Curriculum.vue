@@ -13,10 +13,16 @@
         <education />
       </v-flex>
       <v-flex xs12>
-        <h4 class="display-1">Experience</h4>
+        <h4
+          class="display-1"
+          id="experience">
+          Experience
+        </h4>
       </v-flex>
       <v-flex xs12>
-        <employers />
+        <employers
+          aria-labelledby="experience"
+          role="main" />
       </v-flex>
       <v-flex xs12>
         <h4 class="display-1">Skills</h4>

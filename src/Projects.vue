@@ -9,7 +9,8 @@
         {{ project.title }}
         <external-link
           :link="project.link || clients[project.clientId].link"
-          small />
+          small
+          :title="clients[project.clientId].title" />
         <timespan
           :date-from="project.dateFrom"
           :date-until="project.dateUntil"

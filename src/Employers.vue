@@ -9,7 +9,9 @@
             <v-card-title primary-title>
               <h5 class="headline">
                 {{ employer.title }}
-                <external-link :link="employer.link" />
+                <external-link
+                  :link="employer.link"
+                  :title="employer.title" />
                 <timespan
                   :date-from="employer.dateFrom"
                   :date-until="employer.dateUntil"

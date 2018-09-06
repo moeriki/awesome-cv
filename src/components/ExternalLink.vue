@@ -1,6 +1,7 @@
 <template>
   <span v-if="link">
     <a
+      :aria-label="title"
       @click.stop
       :href="link"
       class="external">
@@ -20,6 +21,7 @@ export default {
     large: { default: false, type: Boolean },
     link: { default: null, type: String },
     small: { default: false, type: Boolean },
+    title: { required: true, type: String },
   },
 };
 </script>
