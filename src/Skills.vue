@@ -21,9 +21,11 @@
             </v-list-tile-content>
             <v-list-tile-action class="stars">
               <v-rating
+                dense
                 half-increments
-                large
+                :large="$vuetify.breakpoint.lg"
                 readonly
+                :small="$vuetify.breakpoint.xsOnly"
                 :value="skill.stars" />
             </v-list-tile-action>
           </v-list-tile>

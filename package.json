@@ -11,7 +11,7 @@
     "lint": "eslint --ext .js,.vue src/",
     "test": "npm run lint && jest --coverage",
     "start": "parcel",
-    "build": "parcel build"
+    "build": "parcel build --no-cache --no-minify"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-pro": "^5.3.1",

@@ -248,19 +248,19 @@ export default {
       awsSes: {
         parent: 'skills.aws',
         score: 8,
-        title: 'Amazon Simple Email Service',
+        title: 'Amazon SES',
       },
       awsSns: {
         icon: 'fa fa-heart',
         parent: 'skills.aws',
         score: 8,
-        title: 'Amazon Simple Notification Service',
+        title: 'Amazon SNS',
       },
       awsSqs: {
         icon: 'fa fa-heart',
         parent: 'skills.aws',
         score: 9,
-        title: 'Amazon Simple Queue Service',
+        title: 'Amazon SQS',
       },
       awsWorkMail: {
         parent: 'skills.aws',
