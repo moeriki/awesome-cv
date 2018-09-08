@@ -13,7 +13,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style>
 html,
 body {
   font-family: 'Roboto', sans-serif;
