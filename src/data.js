@@ -34,7 +34,7 @@ export default {
         dateFrom: '2002',
         dateUntil: '2009',
         description:
-          'In the latter half of my adolescent years I spent half of my summer animating children of various ages at the local playground.',
+          'In the latter half of my adolescent years I spent much of my summer animating children of various ages at the local playground.',
         link: 'https://www.kampenhout.be/be-oke',
         location: 'Kampenhout',
         title: "'t Grobbeltje",
