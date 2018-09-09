@@ -1,28 +1,24 @@
 <template>
-  <v-layout>
-    <v-flex xs12>
-      <v-card>
-        <v-list>
-          <v-list-tile>
-            <v-list-tile-action>
-              <v-icon
-                color="primary"
-                large>
-                {{ education.icon }}
-              </v-icon>
-            </v-list-tile-action>
-            <h5 class="headline">
-              {{ education.title }}
-              <timespan
-                :text="education.location"
-                :date-from="education.dateFrom"
-                :date-until="education.dateUntil" />
-            </h5>
-          </v-list-tile>
-        </v-list>
-      </v-card>
-    </v-flex>
-  </v-layout>
+  <v-card>
+    <v-list>
+      <v-list-tile>
+        <v-list-tile-action>
+          <v-icon
+            color="primary"
+            large>
+            {{ education.icon }}
+          </v-icon>
+        </v-list-tile-action>
+        <h5 class="headline">
+          {{ education.title }}
+          <timespan
+            :text="education.location"
+            :date-from="education.dateFrom"
+            :date-until="education.dateUntil" />
+        </h5>
+      </v-list-tile>
+    </v-list>
+  </v-card>
 </template>
 
 <script>
