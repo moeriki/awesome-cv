@@ -29,7 +29,7 @@ export default {
   components: { Timespan },
   data() {
     return {
-      education: data.experience.education,
+      education: data.education,
     };
   },
 };

@@ -1,4 +1,11 @@
 export default {
+  education: {
+    dateFrom: '2004',
+    dateUntil: '2008',
+    icon: 'fal fa-graduation-cap',
+    location: 'KHLeuven',
+    title: 'Toegepaste Informatica',
+  },
   experience: {
     categories: {
       language: { title: 'Language' },
@@ -21,13 +28,6 @@ export default {
         // NOTE wait for https to work
         // link: 'https://vanerum.com'
       },
-    },
-    education: {
-      dateFrom: '2004',
-      dateUntil: '2008',
-      icon: 'fal fa-graduation-cap',
-      location: 'KHLeuven',
-      title: 'Toegepaste Informatica',
     },
     employers: {
       playground: {

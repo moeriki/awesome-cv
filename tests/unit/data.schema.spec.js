@@ -51,19 +51,6 @@ const clients = {
   additionalProperties: false,
 };
 
-const education = {
-  type: 'object',
-  properties: {
-    dateFrom: date,
-    dateUntil: date,
-    icon,
-    location: string,
-    title: string,
-  },
-  additionalProperties: false,
-  required: ['dateFrom', 'dateUntil', 'location', 'title'],
-};
-
 const employers = {
   type: 'object',
   patternProperties: {
@@ -134,11 +121,24 @@ const skills = {
   },
 };
 
-// groups
+// root
+
+const education = {
+  type: 'object',
+  properties: {
+    dateFrom: date,
+    dateUntil: date,
+    icon,
+    location: string,
+    title: string,
+  },
+  additionalProperties: false,
+  required: ['dateFrom', 'dateUntil', 'location', 'title'],
+};
 
 const experience = {
   type: 'object',
-  properties: { categories, clients, education, employers, projects, skills },
+  properties: { categories, clients, employers, projects, skills },
   additionalProperties: false,
   required: [],
 };
@@ -158,7 +158,7 @@ const profile = {
 
 const schema = {
   type: 'object',
-  properties: { experience, profile },
+  properties: { education, experience, profile },
   additionalProperties: false,
   required: ['experience', 'profile'],
 };
