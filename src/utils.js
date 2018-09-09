@@ -1,5 +1,3 @@
-/* eslint import/prefer-default-export:off */
-
 export const asArray = (object) =>
   Object.keys(object).reduce((acc, propertyName) => {
     acc.push(Object.assign({ _id: propertyName }, object[propertyName]));
