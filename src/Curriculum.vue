@@ -4,7 +4,9 @@
       class="main"
       wrap>
       <v-flex xs12>
-        <intro :name="profile.name" :title="profile.title" />
+        <intro
+          :name="profile.name"
+          :title="profile.title" />
       </v-flex>
       <v-flex xs12>
         <profile :contacts="profile.contacts" />
@@ -13,16 +15,18 @@
         <education v-bind="education" />
       </v-flex>
       <v-flex xs12>
-        <h4 class="display-1" id="experience">
+        <h4
+          id="experience"
+          class="display-1">
           Experience
         </h4>
       </v-flex>
       <v-flex xs12>
         <experience
-          aria-labelledby="experience"
           :clients="experience.clients"
           :employers="experience.employers"
           :projects="experience.projects"
+          aria-labelledby="experience"
           role="main" />
       </v-flex>
       <v-flex xs12>

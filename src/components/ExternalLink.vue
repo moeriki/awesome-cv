@@ -2,9 +2,9 @@
   <span v-if="link">
     <a
       :aria-label="title"
-      @click.stop
       :href="link"
-      class="external">
+      class="external"
+      @click.stop>
       <v-icon
         :large="large"
         :small="small"
