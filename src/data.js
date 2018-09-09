@@ -172,7 +172,7 @@ export default {
       },
       async: {
         legacy: true,
-        parent: 'categories.stack',
+        parent: 'skills.javaScript',
         title: 'async',
       },
       atom: {
@@ -275,7 +275,7 @@ export default {
       },
       backbone: {
         legacy: true,
-        parent: 'categories.stack',
+        parent: 'skills.javaScript',
         title: 'Backbone.js',
       },
       bamboo: {
@@ -704,6 +704,12 @@ export default {
         parent: 'skills.java',
         score: 0,
         title: 'Apache Tomcat',
+      },
+      travis: {
+        icon: 'fa fa-heart',
+        parent: 'categories.tools',
+        score: 7,
+        title: 'Travis CI',
       },
       underscore: {
         legacy: true,

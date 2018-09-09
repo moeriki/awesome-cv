@@ -5,6 +5,13 @@ describe('data', () => {
     experience: { clients, employers, skills, projects },
   } = data;
 
+  function findSkillLevel(skill, acc = 0) {
+    const [parentType, parentId] = skill.parent.split('.');
+    return parentType === 'categories'
+      ? acc
+      : findSkillLevel(data.experience[parentType][parentId], acc + 1);
+  }
+
   describe('projects', () => {
     describe.each(Object.entries(projects))('%s', (key, project) => {
       it('should have a valid clientId', () => {
@@ -29,17 +36,19 @@ describe('data', () => {
         });
       }
 
-      if (skill.parent) {
-        it('should have an existing parent', () => {
-          expect(data.experience).toHaveProperty(skill.parent);
-        });
-      }
+      it('should have an existing parent', () => {
+        expect(data.experience).toHaveProperty(skill.parent);
+      });
 
       if (skill.score != null && skill.score > 0) {
         it('should have a score greater than 5', () => {
           expect(skill.score).toBeGreaterThanOrEqual(5);
         });
       }
+
+      it('should not nest more than 2 levels', () => {
+        expect(findSkillLevel(skill)).not.toBeGreaterThan(2);
+      });
     });
   });
 });
