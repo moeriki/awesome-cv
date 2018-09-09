@@ -1,15 +1,19 @@
 <template>
   <v-app id="app">
-    <curriculum />
+    <curriculum v-bind="data" />
   </v-app>
 </template>
 
 <script>
 import Curriculum from './Curriculum.vue';
+import data from './data';
 
 export default {
   name: 'app',
   components: { Curriculum },
+  data() {
+    return { data };
+  },
 };
 </script>
 

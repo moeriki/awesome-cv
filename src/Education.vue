@@ -6,15 +6,15 @@
           <v-icon
             color="primary"
             large>
-            {{ education.icon }}
+            {{ icon }}
           </v-icon>
         </v-list-tile-action>
         <h5 class="headline">
-          {{ education.title }}
+          {{ title }}
           <timespan
-            :text="education.location"
-            :date-from="education.dateFrom"
-            :date-until="education.dateUntil" />
+            :text="location"
+            :date-from="dateFrom"
+            :date-until="dateUntil" />
         </h5>
       </v-list-tile>
     </v-list>
@@ -22,15 +22,16 @@
 </template>
 
 <script>
-import data from './data';
 import Timespan from './components/Timespan.vue';
 
 export default {
   components: { Timespan },
-  data() {
-    return {
-      education: data.education,
-    };
+  props: {
+    dateFrom: { required: true, type: String },
+    dateUntil: { required: true, type: String },
+    icon: { required: true, type: String },
+    location: { required: true, type: String },
+    title: { required: true, type: String },
   },
 };
 </script>

@@ -19,9 +19,9 @@
 export default {
   props: {
     large: { default: false, type: Boolean },
-    link: { default: null, type: String },
+    link: { default: undefined, type: String },
     small: { default: false, type: Boolean },
-    title: { required: true, type: String },
+    title: { default: undefined, type: String },
   },
 };
 </script>

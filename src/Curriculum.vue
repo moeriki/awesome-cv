@@ -4,31 +4,34 @@
       class="main"
       wrap>
       <v-flex xs12>
-        <intro />
+        <intro :name="profile.name" :title="profile.title" />
       </v-flex>
       <v-flex xs12>
-        <profile />
+        <profile :contacts="profile.contacts" />
       </v-flex>
       <v-flex xs12>
-        <education />
+        <education v-bind="education" />
       </v-flex>
       <v-flex xs12>
-        <h4
-          class="display-1"
-          id="experience">
+        <h4 class="display-1" id="experience">
           Experience
         </h4>
       </v-flex>
       <v-flex xs12>
         <experience
           aria-labelledby="experience"
+          :clients="experience.clients"
+          :employers="experience.employers"
+          :projects="experience.projects"
           role="main" />
       </v-flex>
       <v-flex xs12>
         <h4 class="display-1">Skills</h4>
       </v-flex>
       <v-flex xs12>
-        <skills />
+        <skills
+          :categories="experience.categories"
+          :skills="experience.skills" />
       </v-flex>
     </v-layout>
   </v-container>
@@ -43,6 +46,11 @@ import Skills from './Skills.vue';
 
 export default {
   components: { Education, Experience, Intro, Profile, Skills },
+  props: {
+    education: { required: true, type: Object },
+    experience: { required: true, type: Object },
+    profile: { required: true, type: Object },
+  },
 };
 </script>
 

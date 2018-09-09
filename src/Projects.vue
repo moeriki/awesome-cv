@@ -1,20 +1,20 @@
 <template>
   <v-expansion-panel>
     <v-expansion-panel-content
-      v-for="project in projects"
+      v-for="project in projectTree"
       :key="project._id">
       <h6
         class="title font-weight-light"
         slot="header">
         {{ project.title }}
         <external-link
-          :link="project.link || clients[project.clientId].link"
+          :link="project.link"
           small
-          :title="clients[project.clientId].title" />
+          :title="project.client.title" />
         <timespan
           :date-from="project.dateFrom"
           :date-until="project.dateUntil"
-          :text="clients[project.clientId].title === project.title ? null : clients[project.clientId].title" />
+          :text="project.client.title" />
       </h6>
       <v-card>
         <v-card-title class="role">
@@ -27,7 +27,6 @@
 </template>
 
 <script>
-import data from './data';
 import ExternalLink from './components/ExternalLink.vue';
 import Timespan from './components/Timespan.vue';
 
@@ -35,10 +34,21 @@ export default {
   components: { ExternalLink, Timespan },
   data() {
     return {
-      clients: data.experience.clients,
+      projectTree: this.projects.map((project) => {
+        const client = this.clients[project.clientId];
+        return {
+          ...project,
+          client: {
+            ...client,
+            title: client.title === project.title ? undefined : client.title,
+          },
+          link: project.link || this.clients[project.clientId].link,
+        };
+      }),
     };
   },
   props: {
+    clients: { required: true, type: Object },
     defaultLink: { default: null, type: String },
     projects: { required: true, type: Array },
   },

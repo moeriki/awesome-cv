@@ -1,7 +1,7 @@
 <template>
   <v-card>
     <v-layout
-      v-for="(category, key) of categories"
+      v-for="(category, key) of skillTree"
       class="category"
       :key="key"
       wrap>
@@ -68,37 +68,36 @@
 </template>
 
 <script>
-import data from './data';
 import { transformEntries } from './utils';
-
-const findChildren = (parentId) =>
-  transformEntries((entries) =>
-    entries
-      .filter(([, { score }]) => score >= 5)
-      .filter(([, { parent }]) => parent === parentId)
-      .map(([skillId, skill]) => [
-        skillId,
-        {
-          ...skill,
-          children: findChildren(`skills.${skillId}`),
-          stars: skill.score / 2,
-        },
-      ]),
-  )(data.experience.skills);
 
 export default {
   data() {
+    const findChildren = (parentId) =>
+      transformEntries((entries) =>
+        entries
+          .filter(([, { score }]) => score >= 5)
+          .filter(([, { parent }]) => parent === parentId)
+          .map(([skillId, skill]) => [
+            skillId,
+            {
+              ...skill,
+              children: findChildren(`skills.${skillId}`),
+              stars: skill.score / 2,
+            },
+          ]),
+      )(this.skills);
     return {
-      categories: transformEntries((entries) =>
+      skillTree: transformEntries((entries) =>
         entries.map(([id, category]) => [
           id,
-          {
-            ...category,
-            children: findChildren(`categories.${id}`),
-          },
+          { ...category, children: findChildren(`categories.${id}`) },
         ]),
-      )(data.experience.categories),
+      )(this.categories),
     };
+  },
+  props: {
+    categories: { required: true, type: Object },
+    skills: { required: true, type: Object },
   },
 };
 </script>

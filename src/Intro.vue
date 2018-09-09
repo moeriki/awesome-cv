@@ -5,7 +5,7 @@
       text-xs-center>
       <v-avatar size=150>
         <img
-          :alt="`Picture of ${name}.`"
+          :alt="caption"
           src="./assets/profile.jpg">
       </v-avatar>
     </v-flex>
@@ -20,15 +20,15 @@
 </template>
 
 <script>
-import data from './data';
-
 export default {
   data() {
     return {
-      contacts: data.profile.contacts,
-      name: data.profile.name,
-      title: data.profile.title,
+      caption: `Picture of ${this.name}.`,
     };
+  },
+  props: {
+    name: { required: true, type: String },
+    title: { required: true, type: String },
   },
 };
 </script>

@@ -26,15 +26,9 @@
 </template>
 
 <script>
-import data from './data';
-
 export default {
-  data() {
-    return {
-      contacts: data.profile.contacts,
-      name: data.profile.name,
-      title: data.profile.title,
-    };
+  props: {
+    contacts: { required: true, type: Array },
   },
 };
 </script>
