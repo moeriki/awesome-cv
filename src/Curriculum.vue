@@ -20,7 +20,7 @@
         </h4>
       </v-flex>
       <v-flex xs12>
-        <employers
+        <experience
           aria-labelledby="experience"
           role="main" />
       </v-flex>
@@ -36,13 +36,13 @@
 
 <script>
 import Education from './Education.vue';
-import Employers from './Employers.vue';
+import Experience from './Experience.vue';
 import Intro from './Intro.vue';
 import Profile from './Profile.vue';
 import Skills from './Skills.vue';
 
 export default {
-  components: { Education, Employers, Intro, Profile, Skills },
+  components: { Education, Experience, Intro, Profile, Skills },
 };
 </script>
 
