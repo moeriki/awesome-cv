@@ -39,6 +39,11 @@ import Projects from './Projects.vue';
 
 export default {
   components: { ExternalLink, Projects, Timespan },
+  props: {
+    clients: { required: true, type: Object },
+    employers: { required: true, type: Object },
+    projects: { required: true, type: Object },
+  },
   data() {
     return {
       experience: asArray(this.employers)
@@ -50,11 +55,6 @@ export default {
             .sort(orderBy('dateFrom')),
         })),
     };
-  },
-  props: {
-    clients: { required: true, type: Object },
-    employers: { required: true, type: Object },
-    projects: { required: true, type: Object },
   },
 };
 </script>

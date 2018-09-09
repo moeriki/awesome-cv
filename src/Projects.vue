@@ -4,13 +4,13 @@
       v-for="project in projectTree"
       :key="project._id">
       <h6
-        class="title font-weight-light"
-        slot="header">
+        slot="header"
+        class="title font-weight-light">
         {{ project.title }}
         <external-link
           :link="project.link"
-          small
-          :title="project.client.title" />
+          :title="project.client.title"
+          small />
         <timespan
           :date-from="project.dateFrom"
           :date-until="project.dateUntil"
@@ -32,6 +32,11 @@ import Timespan from './components/Timespan.vue';
 
 export default {
   components: { ExternalLink, Timespan },
+  props: {
+    clients: { required: true, type: Object },
+    defaultLink: { default: null, type: String },
+    projects: { required: true, type: Array },
+  },
   data() {
     return {
       projectTree: this.projects.map((project) => {
@@ -46,11 +51,6 @@ export default {
         };
       }),
     };
-  },
-  props: {
-    clients: { required: true, type: Object },
-    defaultLink: { default: null, type: String },
-    projects: { required: true, type: Array },
   },
 };
 </script>

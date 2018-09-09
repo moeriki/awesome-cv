@@ -2,10 +2,12 @@
   <v-card>
     <v-layout
       v-for="(category, key) of skillTree"
-      class="category"
       :key="key"
+      class="category"
       wrap>
-      <v-flex class="title font-weight-light" xs12>{{ category.title }}</v-flex>
+      <v-flex
+        class="title font-weight-light"
+        xs12>{{ category.title }}</v-flex>
       <v-flex xs12>
         <v-layout
           v-for="(skill, key) of category.children"
@@ -14,7 +16,8 @@
           <v-flex md1 />
           <v-flex
             class="skill"
-            xs8 md7>
+            xs8
+            md7>
             {{ skill.title }}
             <span :v-if="skill.icon">
               <v-icon
@@ -24,23 +27,28 @@
               </v-icon>
             </span>
           </v-flex>
-          <v-flex xs4 class="stars">
+          <v-flex
+            xs4
+            class="stars">
             <v-rating
+              :large="$vuetify.breakpoint.lg"
+              :small="$vuetify.breakpoint.xsOnly"
+              :value="skill.stars || 5"
               dense
               half-increments
-              :large="$vuetify.breakpoint.lg"
-              readonly
-              :small="$vuetify.breakpoint.xsOnly"
-              :value="skill.stars || 5" />
+              readonly />
           </v-flex>
           <v-flex xs12>
             <v-layout
               v-for="(subSkill, key) of skill.children"
               :key="key">
-              <v-flex xs1 md2 />
+              <v-flex
+                xs1
+                md2 />
               <v-flex
                 class="skill"
-                xs7 md6>
+                xs7
+                md6>
                 {{ subSkill.title }}
                 <span :v-if="subSkill.icon">
                   <v-icon
@@ -50,14 +58,17 @@
                   </v-icon>
                 </span>
               </v-flex>
-              <v-flex xs4 md4 class="stars">
+              <v-flex
+                xs4
+                md4
+                class="stars">
                 <v-rating
+                  :large="$vuetify.breakpoint.lg"
+                  :small="$vuetify.breakpoint.xsOnly"
+                  :value="subSkill.stars"
                   dense
                   half-increments
-                  :large="$vuetify.breakpoint.lg"
-                  readonly
-                  :small="$vuetify.breakpoint.xsOnly"
-                  :value="subSkill.stars" />
+                  readonly />
               </v-flex>
             </v-layout>
           </v-flex>
@@ -71,6 +82,10 @@
 import { transformEntries } from './utils';
 
 export default {
+  props: {
+    categories: { required: true, type: Object },
+    skills: { required: true, type: Object },
+  },
   data() {
     const findChildren = (parentId) =>
       transformEntries((entries) =>
@@ -95,14 +110,10 @@ export default {
       )(this.categories),
     };
   },
-  props: {
-    categories: { required: true, type: Object },
-    skills: { required: true, type: Object },
-  },
 };
 </script>
 
-<style>
+<style scoped>
 .category {
   padding: 16px 32px;
 }

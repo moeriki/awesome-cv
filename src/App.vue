@@ -9,7 +9,7 @@ import Curriculum from './Curriculum.vue';
 import data from './data';
 
 export default {
-  name: 'app',
+  name: 'App',
   components: { Curriculum },
   data() {
     return { data };

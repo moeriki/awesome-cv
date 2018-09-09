@@ -3,7 +3,7 @@
     <v-flex
       xs12
       text-xs-center>
-      <v-avatar size=150>
+      <v-avatar size="150">
         <img
           :alt="caption"
           src="./assets/profile.jpg">
@@ -21,14 +21,14 @@
 
 <script>
 export default {
+  props: {
+    name: { required: true, type: String },
+    title: { required: true, type: String },
+  },
   data() {
     return {
       caption: `Picture of ${this.name}.`,
     };
-  },
-  props: {
-    name: { required: true, type: String },
-    title: { required: true, type: String },
   },
 };
 </script>
