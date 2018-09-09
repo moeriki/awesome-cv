@@ -1,6 +1,6 @@
 import Ajv from 'ajv';
 
-import data from '../src/data';
+import data from '@/data';
 
 // types
 

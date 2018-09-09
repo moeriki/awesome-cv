@@ -1,4 +1,3 @@
-// import 'babel-polyfill'; // IE 11 & Safari 9 support
 import '@fortawesome/fontawesome-pro/css/all.css';
 import 'vuetify/dist/vuetify.min.css';
 
@@ -7,6 +6,7 @@ import Vuetify from 'vuetify';
 import colors from 'vuetify/es5/util/colors';
 
 import App from './App.vue';
+import './registerServiceWorker';
 
 Vue.config.productionTip = false;
 
@@ -18,6 +18,6 @@ Vue.use(Vuetify, {
   },
 });
 
-/* eslint no-new:off */
-
-new Vue(App).$mount('#app');
+new Vue({
+  render: (h) => h(App),
+}).$mount('#app');

@@ -2,89 +2,37 @@
   "name": "awesome-cv",
   "version": "1.0.0",
   "license": "MIT",
-  "main": "index.html",
   "private": true,
   "engines": {
     "node": ">=8"
   },
   "scripts": {
-    "clean": "rm -rf .cache dist/",
-    "lint": "eslint --ext .js,.vue src/",
-    "test": "npm run lint && jest --coverage",
-    "start": "parcel",
-    "build": "parcel build --no-cache --no-minify"
-  },
-  "devDependencies": {
-    "@fortawesome/fontawesome-pro": "^5.3.1",
-    "@vue/component-compiler-utils": "^2.2.0",
-    "ajv": "^6.5.3",
-    "babel-polyfill": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-vue": "^2.0.2",
-    "eslint": "^4.19.1",
-    "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-config-prettier": "^3.0.1",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-vue": "^4.7.1",
-    "jest": "^23.5.0",
-    "node-sass": "^4.9.3",
-    "parcel-bundler": "^1.9.7",
-    "vue": "^2.5.17",
-    "vue-eslint-parser": "^3.2.2",
-    "vue-hot-reload-api": "^2.3.0",
-    "vue-template-compiler": "^2.5.17",
-    "vuetify": "^1.2.1"
-  },
-  "babel": {
-    "plugins": [
-      "transform-object-rest-spread"
-    ],
-    "presets": [
-      "env",
-      "vue"
-    ]
-  },
-  "browserslist": [
-    "> 1%"
-  ],
-  "eslintConfig": {
-    "extends": [
-      "airbnb-base",
-      "plugin:vue/strongly-recommended",
-      "prettier"
-    ],
-    "parser": "vue-eslint-parser",
-    "parserOptions": {
-      "ecmaVersion": 2018,
-      "sourceType": "module"
-    },
-    "root": true,
-    "rules": {
-      "no-underscore-dangle": [
-        "error",
-        {
-          "allow": [
-            "_id"
-          ]
-        }
-      ],
-      "import/no-extraneous-dependencies": [
-        "error",
-        {
-          "devDependencies": true
-        }
-      ]
-    }
-  },
-  "eslintIgnore": [
-    "dist/"
-  ],
-  "prettier": {
-    "arrowParens": "always",
-    "singleQuote": true,
-    "trailingComma": "all"
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "serve": "vue-cli-service serve",
+    "test": "yarn run test:unit",
+    "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
-    "babel-plugin-transform-object-rest-spread": "^6.26.0"
+    "@fortawesome/fontawesome-pro": "^5.3.1",
+    "register-service-worker": "^1.0.0",
+    "vue": "^2.5.17",
+    "vuetify": "^1.2.3"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.1",
+    "@vue/cli-plugin-eslint": "^3.0.1",
+    "@vue/cli-plugin-pwa": "^3.0.1",
+    "@vue/cli-plugin-unit-jest": "^3.0.1",
+    "@vue/cli-service": "^3.0.1",
+    "@vue/eslint-config-airbnb": "^3.0.1",
+    "@vue/test-utils": "^1.0.0-beta.20",
+    "ajv": "^6.5.3",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "23.0.1",
+    "eslint-config-prettier": "^3.0.1",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.1",
+    "vue-template-compiler": "^2.5.17"
   }
 }
