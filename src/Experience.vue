@@ -63,9 +63,6 @@ export default {
 .employer {
   margin-top: 16px;
 }
-.location + .timespan::before {
-  content: ', ';
-}
 .projects {
   margin-top: 8px;
 }
