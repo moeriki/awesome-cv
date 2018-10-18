@@ -15,6 +15,7 @@ export default {
     },
     clients: {
       belgacom: { title: 'Belgacom', link: 'https://www.proximus.be' },
+      cm: { title: 'CM', link: 'https://www.cm.be' },
       medialaan: { title: 'MEDIALAAN', link: 'https://medialaan.be' },
       scoutsBerg: { title: 'Scouts Berg', link: 'https://scoutsberg.be' },
       scp: { title: 'Sandy Croes Photography', link: 'https://sandycroes.be' },
@@ -146,6 +147,16 @@ export default {
         link: 'https://scoutsberg.be',
         role: 'Content Manager, Designer, Operations',
         title: 'Scouts Berg',
+      },
+      pwa: {
+        clientId: 'cm',
+        dateFrom: '2018/10',
+        dateUntil: '…',
+        description:
+          "For CM I'm developing a Progressive Web App as a blueprint to convert all their apps to a modern stack.",
+        employerId: 'foursevens',
+        role: 'Architect, Lead Developer',
+        title: 'PWA',
       },
       ucms: {
         clientId: 'belgacom',
