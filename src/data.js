@@ -377,7 +377,7 @@ export default {
         title: 'ESLint',
       },
       express: {
-        parent: 'categories.stack',
+        parent: 'skills.javaScript',
         score: 8,
         title: 'Express',
       },
