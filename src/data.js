@@ -97,8 +97,8 @@ export default {
       },
       leadMgmt: {
         clientId: 'tme',
-        dateFrom: '2015',
-        dateUntil: '2016',
+        dateFrom: '2015/07',
+        dateUntil: '2016/04',
         description:
           'To follow up customer leads we developed an automated system to capture, process and maintain data.',
         employerId: 'foursevens',
@@ -108,7 +108,7 @@ export default {
       learnhub: {
         clientId: 'vanerum',
         dateFrom: '2013',
-        dateUntil: '2015',
+        dateUntil: '2015/07',
         description:
           'We created an interactive whiteboard web application to complement the hardware Vanerum sells to educational institutions.',
         employerId: 'foursevens',
@@ -118,8 +118,8 @@ export default {
       },
       medialaan: {
         clientId: 'medialaan',
-        dateFrom: '2016',
-        dateUntil: '…',
+        dateFrom: '2016/04',
+        dateUntil: '2018/10',
         description:
           'In an ever-changing digital landscape the medialaan New Media team crafts and maintains services for delivering TV data, on-demand, and live video content.',
         employerId: 'foursevens',
