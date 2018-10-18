@@ -108,7 +108,7 @@ export default {
       },
       learnhub: {
         clientId: 'vanerum',
-        dateFrom: '2013',
+        dateFrom: '2013/10',
         dateUntil: '2015/07',
         description:
           'We created an interactive whiteboard web application to complement the hardware Vanerum sells to educational institutions.',
