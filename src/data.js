@@ -463,7 +463,7 @@ export default {
         title: 'jQuery UI',
       },
       java: {
-        parent: 'categories.stack',
+        parent: 'categories.language',
         score: 0,
         title: 'Java',
       },
