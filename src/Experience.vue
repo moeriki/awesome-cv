@@ -32,7 +32,7 @@
 </template>
 
 <script>
-import { asArray, matchesProperty, orderBy } from './utils';
+import { asArray, matchesProperty, newToOld } from './utils';
 import ExternalLink from './components/ExternalLink.vue';
 import Timespan from './components/Timespan.vue';
 import Projects from './Projects.vue';
@@ -47,12 +47,12 @@ export default {
   data() {
     return {
       experience: asArray(this.employers)
-        .sort(orderBy('dateFrom'))
+        .sort(newToOld)
         .map((employer) => ({
           ...employer,
           projects: asArray(this.projects)
             .filter(matchesProperty('employerId', employer._id))
-            .sort(orderBy('dateFrom')),
+            .sort(newToOld),
         })),
     };
   },

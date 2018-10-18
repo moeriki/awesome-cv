@@ -17,8 +17,11 @@ export const mapValues = (mapper) => (source) =>
 
 export const matchesProperty = (name, value) => (obj) => obj[name] === value;
 
-export const orderBy = (propertyName) => (obj1, obj2) =>
-  obj1[propertyName] - obj2[propertyName];
+export const newToOld = ({ dateFrom: date1 }, { dateFrom: date2 }) => {
+  const [year1, month1] = date1.split('/');
+  const [year2, month2] = date2.split('/');
+  return year2 - year1 === 0 ? month2 - month1 : year2 - year1;
+};
 
 export const transformEntries = (func) => (source) =>
   fromEntries(func(Object.entries(source)));
