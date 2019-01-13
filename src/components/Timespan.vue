@@ -1,20 +1,8 @@
 <template>
   <span class="subheading grey--text">
-    <span
-      v-if="text"
-      class="text">
-      {{ text }}
-    </span>
-    <span
-      v-if="dateFrom"
-      class="dateFrom">
-      {{ dateFrom }}
-    </span>
-    <span
-      v-if="dateUntil"
-      class="dateUntil">
-      {{ dateUntil }}
-    </span>
+    <span v-if="text" class="text">{{ text }}</span>
+    <span v-if="dateFrom" class="dateFrom">{{ dateFrom }}</span>
+    <span v-if="dateUntil" class="dateUntil">{{ dateUntil }}</span>
   </span>
 </template>
 

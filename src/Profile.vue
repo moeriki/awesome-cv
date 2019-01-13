@@ -3,16 +3,9 @@
     <v-flex xs12>
       <v-card>
         <v-list two-line>
-          <v-list-tile
-            v-for="contact in contacts"
-            :href="contact.link"
-            :key="contact._id">
+          <v-list-tile v-for="contact in contacts" :key="contact._id" :href="contact.link">
             <v-list-tile-action>
-              <v-icon
-                color="primary"
-                large>
-                {{ contact.icon }}
-              </v-icon>
+              <v-icon color="primary" large>{{ contact.icon }}</v-icon>
             </v-list-tile-action>
             <v-list-tile-content>
               <v-list-tile-title>{{ contact.value }}</v-list-tile-title>

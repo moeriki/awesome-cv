@@ -1,16 +1,7 @@
 <template>
   <span v-if="link">
-    <a
-      :aria-label="title"
-      :href="link"
-      class="external"
-      @click.stop>
-      <v-icon
-        :large="large"
-        :small="small"
-        color="secondary">
-        fal fa-link
-      </v-icon>
+    <a :aria-label="title" :href="link" class="external" @click.stop>
+      <v-icon :large="large" :small="small" color="secondary">fal fa-link</v-icon>
     </a>
   </span>
 </template>

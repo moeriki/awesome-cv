@@ -1,6 +1,6 @@
 <template>
   <v-app id="app">
-    <curriculum v-bind="data" />
+    <curriculum v-bind="data"/>
   </v-app>
 </template>
 

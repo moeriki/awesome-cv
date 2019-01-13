@@ -1,25 +1,17 @@
 <template>
   <v-container>
-    <v-layout
-      class="main"
-      wrap>
+    <v-layout class="main" wrap>
       <v-flex xs12>
-        <intro
-          :name="profile.name"
-          :title="profile.title" />
+        <intro :name="profile.name" :title="profile.title"/>
       </v-flex>
       <v-flex xs12>
-        <profile :contacts="profile.contacts" />
+        <profile :contacts="profile.contacts"/>
       </v-flex>
       <v-flex xs12>
-        <education v-bind="education" />
+        <education v-bind="education"/>
       </v-flex>
       <v-flex xs12>
-        <h4
-          id="experience"
-          class="display-1">
-          Experience
-        </h4>
+        <h4 id="experience" class="display-1">Experience</h4>
       </v-flex>
       <v-flex xs12>
         <experience
@@ -27,15 +19,14 @@
           :employers="experience.employers"
           :projects="experience.projects"
           aria-labelledby="experience"
-          role="main" />
+          role="main"
+        />
       </v-flex>
       <v-flex xs12>
         <h4 class="display-1">Skills</h4>
       </v-flex>
       <v-flex xs12>
-        <skills
-          :categories="experience.categories"
-          :skills="experience.skills" />
+        <skills :categories="experience.categories" :skills="experience.skills"/>
       </v-flex>
     </v-layout>
   </v-container>

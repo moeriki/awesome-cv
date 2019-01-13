@@ -1,20 +1,14 @@
 <template>
   <v-expansion-panel>
-    <v-expansion-panel-content
-      v-for="project in projectTree"
-      :key="project._id">
-      <h6
-        slot="header"
-        class="title font-weight-light">
+    <v-expansion-panel-content v-for="project in projectTree" :key="project._id">
+      <h6 slot="header" class="title font-weight-light">
         {{ project.title }}
-        <external-link
-          :link="project.link"
-          :title="project.client.title"
-          small />
+        <external-link :link="project.link" :title="project.client.title" small/>
         <timespan
           :date-from="project.dateFrom"
           :date-until="project.dateUntil"
-          :text="project.client.title" />
+          :text="project.client.title"
+        />
       </h6>
       <v-card>
         <v-card-title class="role">

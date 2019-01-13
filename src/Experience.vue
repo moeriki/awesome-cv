@@ -1,21 +1,18 @@
 <template>
   <v-layout>
     <v-flex xs12>
-      <div
-        v-for="employer in experience"
-        :key="employer._id">
+      <div v-for="employer in experience" :key="employer._id">
         <v-card class="employer">
           <v-card-title>
             <v-card-title primary-title>
               <h5 class="headline">
                 {{ employer.title }}
-                <external-link
-                  :link="employer.link"
-                  :title="employer.title" />
+                <external-link :link="employer.link" :title="employer.title"/>
                 <timespan
                   :date-from="employer.dateFrom"
                   :date-until="employer.dateUntil"
-                  :text="employer.location" />
+                  :text="employer.location"
+                />
               </h5>
             </v-card-title>
             <v-card-text>{{ employer.description }}</v-card-text>
@@ -25,7 +22,8 @@
           v-if="employer.projects.length !== 0"
           :clients="clients"
           :projects="employer.projects"
-          class="projects" />
+          class="projects"
+        />
       </div>
     </v-flex>
   </v-layout>

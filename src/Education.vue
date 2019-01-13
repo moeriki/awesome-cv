@@ -3,18 +3,11 @@
     <v-list>
       <v-list-tile>
         <v-list-tile-action>
-          <v-icon
-            color="primary"
-            large>
-            {{ icon }}
-          </v-icon>
+          <v-icon color="primary" large>{{ icon }}</v-icon>
         </v-list-tile-action>
         <h5 class="headline">
           {{ title }}
-          <timespan
-            :text="location"
-            :date-from="dateFrom"
-            :date-until="dateUntil" />
+          <timespan :text="location" :date-from="dateFrom" :date-until="dateUntil"/>
         </h5>
       </v-list-tile>
     </v-list>

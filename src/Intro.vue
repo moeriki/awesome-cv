@@ -1,21 +1,15 @@
 <template>
   <v-layout wrap>
-    <v-flex
-      xs12
-      text-xs-center>
+    <v-flex xs12 text-xs-center>
       <v-avatar size="150">
-        <img
-          :alt="caption"
-          src="./assets/profile.jpg">
+        <img :alt="caption" src="./assets/profile.jpg">
       </v-avatar>
     </v-flex>
-    <v-flex
-      xs12
-      text-xs-center>
+    <v-flex xs12 text-xs-center>
       <h2 class="display-3">{{ name }}</h2>
       <div class="title">{{ title }}</div>
     </v-flex>
-    <v-spacer />
+    <v-spacer/>
   </v-layout>
 </template>
 
