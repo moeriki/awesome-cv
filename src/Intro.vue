@@ -1,9 +1,7 @@
 <template>
   <v-layout wrap>
     <v-flex xs12 text-xs-center>
-      <v-avatar size="150">
-        <img :alt="caption" src="./assets/profile.jpg">
-      </v-avatar>
+      <img :alt="caption" src="./assets/logo.svg" height="200">
     </v-flex>
     <v-flex xs12 text-xs-center>
       <h2 class="display-3">{{ name }}</h2>
