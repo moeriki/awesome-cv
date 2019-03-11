@@ -14,26 +14,26 @@
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-pro": "^5.7.1",
-    "register-service-worker": "^1.0.0",
-    "vue": "^2.5.22",
-    "vuetify": "^1.4.4"
+    "@fortawesome/fontawesome-pro": "^5.7.2",
+    "register-service-worker": "^1.6.2",
+    "vue": "^2.6.8",
+    "vuetify": "^1.5.5"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.4.0",
-    "@vue/cli-plugin-eslint": "^3.4.0",
-    "@vue/cli-plugin-pwa": "^3.4.0",
-    "@vue/cli-plugin-unit-jest": "^3.4.0",
-    "@vue/cli-service": "^3.4.0",
+    "@vue/cli-plugin-babel": "^3.5.0",
+    "@vue/cli-plugin-eslint": "^3.5.0",
+    "@vue/cli-plugin-pwa": "^3.5.0",
+    "@vue/cli-plugin-unit-jest": "^3.5.0",
+    "@vue/cli-service": "^3.5.0",
     "@vue/eslint-config-airbnb": "^4.0.0",
-    "@vue/test-utils": "^1.0.0-beta.28",
-    "ajv": "^6.7.0",
+    "@vue/test-utils": "^1.0.0-beta.29",
+    "ajv": "^6.10.0",
     "babel-core": "7.0.0-bridge.0",
-    "babel-jest": "24.0.0",
-    "eslint-config-prettier": "^4.0.0",
+    "babel-jest": "24.3.1",
+    "eslint-config-prettier": "^4.1.0",
     "node-sass": "^4.11.0",
     "sass-loader": "^7.0.1",
     "vue-cli-plugin-svg": "^0.1.2",
-    "vue-template-compiler": "^2.5.22"
+    "vue-template-compiler": "^2.6.8"
   }
 }
