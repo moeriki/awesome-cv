@@ -585,6 +585,11 @@ export default {
         score: 6,
         title: 'MySQL',
       },
+      nextJs: {
+        parent: 'skills.react',
+        score: 5,
+        title: 'Next.js',
+      },
       nl: {
         parent: 'categories.language',
         score: 10,
@@ -632,6 +637,11 @@ export default {
         parent: 'categories.language',
         score: 0,
         title: 'Python',
+      },
+      react: {
+        parent: 'skills.javaScript',
+        score: 6,
+        title: 'React',
       },
       redis: {
         parent: 'categories.stack',
