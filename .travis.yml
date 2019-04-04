@@ -12,9 +12,8 @@ deploy:
   skip_cleanup: true
   provider: s3
   region: eu-west-1
-  access_key_id: AKIAJDBQL5N5FYCPIVJQ
-  secret_access_key:
-    secure: tGgTT7Q7oBzxT3TNaQs33VDTkWqhCPH20f2bCr/UXGM08VpHRA5j215y264yuHjwPDyCZjBEErchaTd12orkqsa3aiYQdTXhClPGNyGgJ0Om/+BP1KfecXnVcQE5dveR6kzCyikl4Mn8zvm4Av1Eq1ECDof6PFDlc5k1NlZQDiDXKeYY/8aqM1CTzpMDKP11tWZ34a47oTvHX7gF3Ej3J1GBtQteLyqIfE1rkbDPWmvnLWWZC8fFdd3tPnTYz4q1/vCdFxcLsvD7cvYuvg4uw5zpbo+nXeZGGiUvMRueYwubNXWgjdDNPmOZBzdKihv/5SJWcp9UQKHjiR7Z0c9PdXwoHrRtkvo8g5HNwLjzOp4XmdPDip0TIi66qKnQeAZ3g+VXzQtu7LLQebR9U2TOPlvNDBLtTPkTvVdWLbjwOYhYIoY43f7VJgsG8fH65xBcoOUxp63uJqQRT+MH0AWSvMWfoQE/++4C5eZk6ix0H0DNkjid3bKAMRK3Vf41rogCQo3svAg7fqbPC37l/gjgHq1DZqdj4+v46ocwHmMLGp0vobbtveDj53fTLzI+UyVZ3i0xuo1qpE0+1NaW7LVisvC+wtx89U8x83X7Jrw8OYv/Py/GrZXKEVaOBoh180roAgIpXZwKiIcLsLPZzT5SgsZdBgRiES25fJlwMMgzvM4=
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_ACCESS_KEY
   bucket: moeriki.com
   local-dir: dist/
   on:
