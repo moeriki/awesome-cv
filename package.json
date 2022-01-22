@@ -1,0 +1,22 @@
+{
+  "name": "@moeriki/com",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite dev",
+    "format": "yarn prettier -w .",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "vite": "^2.8.4",
+    "vite-plugin-windicss": "^1.8.1",
+    "windicss": "^3.5.0"
+  },
+  "prettier": {
+    "arrowParens": "always",
+    "singleQuote": true,
+    "trailingComma": "all"
+  }
+}

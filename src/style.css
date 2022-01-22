@@ -1,0 +1,18 @@
+::root {
+  --white: #e1e4e1;
+  --dark: #5f503e;
+  --light: #9c9c9c;
+  --primary-dark: #bf7c2a;
+  --primary-light: #c09c6f;
+}
+
+body {
+  @apply antialiased font-sans;
+  background-color: var(--white);
+  color: var(--dark);
+}
+
+.logo {
+  width: 200px;
+  height: 200px;
+}
