@@ -10,9 +10,9 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.2",
-    "vite": "^2.8.4",
-    "vite-plugin-windicss": "^1.8.1",
-    "windicss": "^3.5.0"
+    "postcss-logical-properties": "^0.0.4",
+    "postcss-nesting": "^10.1.10",
+    "vite": "^2.8.4"
   },
   "prettier": {
     "arrowParens": "always",

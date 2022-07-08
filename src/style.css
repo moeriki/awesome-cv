@@ -1,18 +1,9 @@
-::root {
-  --white: #e1e4e1;
-  --dark: #5f503e;
-  --light: #9c9c9c;
-  --primary-dark: #bf7c2a;
-  --primary-light: #c09c6f;
-}
+@import url('./style/reset.css');
 
-body {
-  @apply antialiased font-sans;
-  background-color: var(--white);
-  color: var(--dark);
-}
+@import url('./style/fluid.css');
+@import url('./style/global.css');
 
-.logo {
-  width: 200px;
-  height: 200px;
-}
+/* @import url('./style/composition.css'); */
+/* @import url('./style/utility.css'); */
+@import url('./style/block.css');
+/* @import url('./style/exceptions.css'); */
