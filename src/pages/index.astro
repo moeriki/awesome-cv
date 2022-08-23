@@ -1,0 +1,40 @@
+---
+import RootLayout from '../layouts/root.astro';
+import logo from '../logo.svg';
+---
+
+<RootLayout title="moeriki">
+	<div class="header">
+		<h1 class="title">moeriki<span class="title__suffix">.com</span></h1>
+		<img alt="logo of moeriki BV" src={logo} class="logo" />
+	</div>
+</RootLayout>
+
+<style>
+	.header {
+		display: flex;
+		flex-flow: column nowrap;
+		gap: var(--gutter);
+		align-items: center;
+		margin-block-start: var(--space-2xl);
+
+		& .logo {
+			order: -1;
+		}
+	}
+
+	.logo {
+		width: 200px;
+		height: 200px;
+		margin-inline: auto;
+	}
+
+	.title {
+		color: var(--primary-light);
+		font-size: var(--step-5);
+		font-weight: 700;
+	}
+	.title__suffix {
+		color: var(--primary-dark);
+	}
+</style>
