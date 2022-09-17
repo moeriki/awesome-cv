@@ -7,9 +7,28 @@ import Logo from '../components/logo.astro';
 	<div class="grid">
 		<header>
 			<Logo />
-			<div class="title">
-				<h1>moeriki</h1>
-				<small><abbr title="Also Known As">a.k.a.</abbr> Dieter Luypaert</small>
+			<div>
+				<div class="title">
+					<h1>moeriki</h1>
+					<small>
+						<abbr title="Also Known As">a.k.a.</abbr>
+						Dieter Luypaert
+					</small>
+				</div>
+				<div class="links">
+					<a href="https://letterboxd.com/moeriki">
+						<i class="fa-solid fa-clapperboard"></i>
+						<div class="visually-hidden">Letterboxd</div>
+					</a>
+					<a href="https://last.fm/user/gOofytj">
+						<i class="fa-solid fa-music"></i>
+						<div class="visually-hidden">Last.fm</div>
+					</a>
+					<a href="https://twitter.com/dieterluypaert">
+						<i class="fa-brands fa-twitter"></i>
+						<div class="visually-hidden">Twitter</div>
+					</a>
+				</div>
 			</div>
 		</header>
 	</div>
@@ -24,10 +43,20 @@ import Logo from '../components/logo.astro';
 
 	header {
 		display: contents;
+		text-align: center;
+
+		& .links {
+			margin-top: var(--space-s);
+			display: inline-flex;
+			gap: var(--space-xs);
+
+			& a {
+				color: black;
+			}
+		}
 	}
 
 	.title {
-		text-align: center;
 		line-height: 1;
 
 		& h1 {
@@ -46,7 +75,7 @@ import Logo from '../components/logo.astro';
 		.grid {
 			grid-template-columns: min(400px, 50%) 1fr;
 		}
-		.title {
+		header {
 			text-align: right;
 		}
 	}
